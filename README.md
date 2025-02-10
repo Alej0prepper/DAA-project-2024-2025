@@ -16,3 +16,5 @@ Dado un grafo \( G_A \) que representa la infraestructura crítica de una ciudad
 - Permite optimizar la planificación urbana al poder replicar soluciones probadas de una ciudad a otra, lo que le da relevancia desde el putno de vista práctico.
 - Plantea un desafío interesante desde el punto de vista computacional, ya que se trata del problema de isomorfismo de subgrafos, conocido como NP-completo.
 - Requiere el desarrollo de algoritmos eficientes y heurísticas efectivas para resolverlo en práctica.
+
+###### Puedes encontrar bibliografía [aquí](https://github.com/Alej0prepper/DAA-project-2024-2025/blb)
