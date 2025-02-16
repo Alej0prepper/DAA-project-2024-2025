@@ -1,0 +1,182 @@
+[
+    {
+        "label": "itertools",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "itertools",
+        "description": "itertools",
+        "detail": "itertools",
+        "documentation": {}
+    },
+    {
+        "label": "networkx",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "networkx",
+        "description": "networkx",
+        "detail": "networkx",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "find_subgraphs",
+        "kind": 2,
+        "importPath": "src.edges_verification",
+        "description": "src.edges_verification",
+        "peekOfCode": "def find_subgraphs(G1, G2):\n    \"\"\"Find all subgraphs of size equal to G1 in G2.\"\"\"\n    n = len(G2.nodes)\n    k = len(G1.nodes)\n    subgraphs = []\n    # Generate all combinations of k nodes in G2\n    for nodes in itertools.combinations(G2.nodes, k):\n        # Create the subgraph induced by these nodes in G2\n        subgraph = G2.subgraph(nodes)\n        subgraphs.append(subgraph)",
+        "detail": "src.edges_verification",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_degrees",
+        "kind": 2,
+        "importPath": "src.edges_verification",
+        "description": "src.edges_verification",
+        "peekOfCode": "def calculate_degrees(graph):\n    \"\"\"Calculate the degree of each node in the graph.\"\"\"\n    degrees = {node: degree for node, degree in graph.degree()}\n    return degrees\ndef get_edges(graph, node_degrees):\n    \"\"\"Return the edges with the lower degree node first.\"\"\"\n    edges = []\n    for u, v in graph.edges():\n        # Get degrees of nodes u and v\n        deg_u = node_degrees[u]",
+        "detail": "src.edges_verification",
+        "documentation": {}
+    },
+    {
+        "label": "get_edges",
+        "kind": 2,
+        "importPath": "src.edges_verification",
+        "description": "src.edges_verification",
+        "peekOfCode": "def get_edges(graph, node_degrees):\n    \"\"\"Return the edges with the lower degree node first.\"\"\"\n    edges = []\n    for u, v in graph.edges():\n        # Get degrees of nodes u and v\n        deg_u = node_degrees[u]\n        deg_v = node_degrees[v]\n        # Add edge with the node of lower degree first\n        if deg_u < deg_v:\n            edges.append((u, v))",
+        "detail": "src.edges_verification",
+        "documentation": {}
+    },
+    {
+        "label": "check_isomorphism",
+        "kind": 2,
+        "importPath": "src.edges_verification",
+        "description": "src.edges_verification",
+        "peekOfCode": "def check_isomorphism(G1, G2):\n    \"\"\"Check if there is an isomorphism between G1 and G2.\"\"\"\n    # Find all subgraphs of G2 of size equal to G1\n    subgraphs = find_subgraphs(G1, G2)\n    # Calculate degrees for G1\n    degree_G1 = calculate_degrees(G1)\n    for subgraph in subgraphs:\n        # Calculate degrees for the subgraph\n        degree_subgraph = calculate_degrees(subgraph)\n        # Get edges sorted by the node degrees in the subgraph",
+        "detail": "src.edges_verification",
+        "documentation": {}
+    },
+    {
+        "label": "initialize_m0",
+        "kind": 2,
+        "importPath": "src.ullman_algorithm",
+        "description": "src.ullman_algorithm",
+        "peekOfCode": "def initialize_m0(G_a, G_b):\n    \"\"\"\n    Initializes the candidate matrix M0 for Ullmann's algorithm.\n    Parameters:\n    G_a (ndarray): Adjacency matrix of graph A.\n    G_b (ndarray): Adjacency matrix of graph B.\n    Returns:\n    ndarray: Initial candidate matrix M0.\n    \"\"\"\n    pa = len(G_a)",
+        "detail": "src.ullman_algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "degree",
+        "kind": 2,
+        "importPath": "src.ullman_algorithm",
+        "description": "src.ullman_algorithm",
+        "peekOfCode": "def degree(graph, vertex):\n    \"\"\"\n    Computes the degree of a given vertex in a graph.\n    Parameters:\n    graph (ndarray): Adjacency matrix of the graph.\n    vertex (int): Index of the vertex.\n    Returns:\n    int: Degree of the vertex.\n    \"\"\"\n    return sum(graph[vertex])",
+        "detail": "src.ullman_algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "is_isomorphism",
+        "kind": 2,
+        "importPath": "src.ullman_algorithm",
+        "description": "src.ullman_algorithm",
+        "peekOfCode": "def is_isomorphism(M_prime, G_a, G_b):\n    \"\"\"\n    Checks if a given mapping matrix M_prime represents an isomorphism between G_a and G_b.\n    Parameters:\n    M_prime (ndarray): Current mapping matrix.\n    G_a (ndarray): Adjacency matrix of graph A.\n    G_b (ndarray): Adjacency matrix of graph B.\n    Returns:\n    bool: True if M_prime represents an isomorphism, False otherwise.\n    \"\"\"",
+        "detail": "src.ullman_algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "prune",
+        "kind": 2,
+        "importPath": "src.ullman_algorithm",
+        "description": "src.ullman_algorithm",
+        "peekOfCode": "def prune(M):\n    \"\"\"\n    Prunes the candidate matrix M to improve efficiency.\n    Parameters:\n    M (ndarray): Candidate matrix to be pruned.\n    Returns:\n    None\n    \"\"\"\n    pass  # Implement pruning logic here\ndef recurse(used_columns, cur_row, G_a, G_b, M_prime):",
+        "detail": "src.ullman_algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "recurse",
+        "kind": 2,
+        "importPath": "src.ullman_algorithm",
+        "description": "src.ullman_algorithm",
+        "peekOfCode": "def recurse(used_columns, cur_row, G_a, G_b, M_prime):\n    \"\"\"\n    Recursively explores possible mappings to find an isomorphism.\n    Parameters:\n    used_columns (set): Set of used columns in M_prime.\n    cur_row (int): Current row index being processed.\n    G_a (ndarray): Adjacency matrix of graph A.\n    G_b (ndarray): Adjacency matrix of graph B.\n    M_prime (ndarray): Current state of the mapping matrix.\n    Returns:",
+        "detail": "src.ullman_algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "ullman_algorithm",
+        "kind": 2,
+        "importPath": "src.ullman_algorithm",
+        "description": "src.ullman_algorithm",
+        "peekOfCode": "def ullman_algorithm(G_a, G_b):\n    \"\"\"\n    Implements Ullmann's subgraph isomorphism algorithm.\n    Parameters:\n    G_a (ndarray): Adjacency matrix of the pattern graph A.\n    G_b (ndarray): Adjacency matrix of the target graph B.\n    Returns:\n    None\n    \"\"\"\n    M0 = initialize_m0(G_a, G_b)",
+        "detail": "src.ullman_algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "g_a",
+        "kind": 5,
+        "importPath": "src.ullman_algorithm",
+        "description": "src.ullman_algorithm",
+        "peekOfCode": "g_a = np.array([[0, 0,1 ],\n                [0, 0,0 ],\n                [1, 0,0 ]])\n  # Graph A adjacency matrix\ng_b = np.array([[0, 1], [1, 0]])  # Graph B adjacency matrix\nullman_algorithm(g_b, g_a)",
+        "detail": "src.ullman_algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "g_b",
+        "kind": 5,
+        "importPath": "src.ullman_algorithm",
+        "description": "src.ullman_algorithm",
+        "peekOfCode": "g_b = np.array([[0, 1], [1, 0]])  # Graph B adjacency matrix\nullman_algorithm(g_b, g_a)",
+        "detail": "src.ullman_algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "adjacency_to_mermaid",
+        "kind": 2,
+        "importPath": "src.ullman_tester_graphs",
+        "description": "src.ullman_tester_graphs",
+        "peekOfCode": "def adjacency_to_mermaid(adj_matrix, graph_id):\n    n = len(adj_matrix)\n    edges = []\n    for i in range(n):\n        for j in range(i + 1, n):  # Only process the upper triangle of the matrix (undirected edges)\n            if adj_matrix[i][j] == 1:\n                edges.append(f\"    {graph_id}{i} --> {graph_id}{j}\")\n    return \"\\n\".join(edges)\n# Function to generate Mermaid diagrams for the provided test cases\ndef generate_mermaid_diagrams(test_cases):",
+        "detail": "src.ullman_tester_graphs",
+        "documentation": {}
+    },
+    {
+        "label": "generate_mermaid_diagrams",
+        "kind": 2,
+        "importPath": "src.ullman_tester_graphs",
+        "description": "src.ullman_tester_graphs",
+        "peekOfCode": "def generate_mermaid_diagrams(test_cases):\n    markdown_content = \"# Graph Isomorphism Test Cases with Mermaid Diagrams\\n\\n\"\n    for case in test_cases:\n        markdown_content += f\"## Caso {case['id']}: \\n\\n\"\n        # Generate the Mermaid diagram for Graph G\n        markdown_content += f\"**Graph G**:\\n\\n```mermaid\\ngraph TD\\n\"\n        markdown_content += adjacency_to_mermaid(case[\"G\"], \"G\")\n        markdown_content += \"\\n```\\n\\n\"\n        # Generate the Mermaid diagram for Graph P\n        markdown_content += f\"**Graph P**:\\n\\n```mermaid\\ngraph TD\\n\"",
+        "detail": "src.ullman_tester_graphs",
+        "documentation": {}
+    },
+    {
+        "label": "test_cases",
+        "kind": 5,
+        "importPath": "src.ullman_tester_graphs",
+        "description": "src.ullman_tester_graphs",
+        "peekOfCode": "test_cases = [\n    {\n        \"id\": 1,\n        \"G\": [\n            [0, 1, 1, 0],\n            [1, 0, 1, 1],\n            [1, 1, 0, 1],\n            [0, 1, 1, 0]\n        ],\n        \"P\": [",
+        "detail": "src.ullman_tester_graphs",
+        "documentation": {}
+    },
+    {
+        "label": "markdown_content",
+        "kind": 5,
+        "importPath": "src.ullman_tester_graphs",
+        "description": "src.ullman_tester_graphs",
+        "peekOfCode": "markdown_content = generate_mermaid_diagrams(test_cases)\n# Save to a .md file\nfile_path = \"/home/francois/Desktop/mermaid_graps.md\"\nwith open(file_path, \"w\") as f:\n    f.write(markdown_content)\nfile_path",
+        "detail": "src.ullman_tester_graphs",
+        "documentation": {}
+    },
+    {
+        "label": "file_path",
+        "kind": 5,
+        "importPath": "src.ullman_tester_graphs",
+        "description": "src.ullman_tester_graphs",
+        "peekOfCode": "file_path = \"/home/francois/Desktop/mermaid_graps.md\"\nwith open(file_path, \"w\") as f:\n    f.write(markdown_content)\nfile_path",
+        "detail": "src.ullman_tester_graphs",
+        "documentation": {}
+    }
+]
