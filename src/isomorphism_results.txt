@@ -1,0 +1,10 @@
+Test 1: Agreement 60.87%, Disagreement 39.13%
+Test 2: Agreement 50.00%, Disagreement 50.00%
+Test 3: Agreement 68.75%, Disagreement 31.25%
+Test 4: Agreement 68.18%, Disagreement 31.82%
+Test 5: Agreement 54.29%, Disagreement 45.71%
+Test 6: Agreement 38.46%, Disagreement 61.54%
+Test 7: Agreement 82.35%, Disagreement 17.65%
+Test 8: Agreement 42.86%, Disagreement 57.14%
+Test 9: Agreement 22.22%, Disagreement 77.78%
+Test 10: Agreement 62.96%, Disagreement 37.04%

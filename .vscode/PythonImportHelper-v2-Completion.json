@@ -1,10 +1,35 @@
 [
     {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
         "label": "itertools",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "itertools",
         "description": "itertools",
+        "detail": "itertools",
+        "documentation": {}
+    },
+    {
+        "label": "combinations",
+        "importPath": "itertools",
+        "description": "itertools",
+        "isExtraImport": true,
+        "detail": "itertools",
+        "documentation": {}
+    },
+    {
+        "label": "permutations",
+        "importPath": "itertools",
+        "description": "itertools",
+        "isExtraImport": true,
         "detail": "itertools",
         "documentation": {}
     },
@@ -18,12 +43,21 @@
         "documentation": {}
     },
     {
-        "label": "numpy",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "numpy",
-        "description": "numpy",
-        "detail": "numpy",
+        "label": "node_degree_sequence",
+        "kind": 2,
+        "importPath": "src.edges_verification",
+        "description": "src.edges_verification",
+        "peekOfCode": "def node_degree_sequence(adj_matrix):\n    \"\"\"\n    Returns a sorted list of node degrees from an adjacency matrix.\n    \"\"\"\n    return sorted(np.sum(adj_matrix, axis=1))  # Sum of each row gives the degree\ndef find_isomorphic_subgraph(G1, G2):\n    \"\"\"\n    Checks if G1 is isomorphic to a subgraph of G2 using adjacency matrices.\n    \"\"\"\n    k = G1.shape[0]  # Number of nodes in G1",
+        "detail": "src.edges_verification",
+        "documentation": {}
+    },
+    {
+        "label": "find_isomorphic_subgraph",
+        "kind": 2,
+        "importPath": "src.edges_verification",
+        "description": "src.edges_verification",
+        "peekOfCode": "def find_isomorphic_subgraph(G1, G2):\n    \"\"\"\n    Checks if G1 is isomorphic to a subgraph of G2 using adjacency matrices.\n    \"\"\"\n    k = G1.shape[0]  # Number of nodes in G1\n    target_degree_seq = node_degree_sequence(G1)\n    n = G2.shape[0]  # Number of nodes in G2\n    for nodes_subset in combinations(range(n), k):\n        subgraph = G2[np.ix_(nodes_subset, nodes_subset)]  # Extract submatrix\n        # Compare degree sequences",
+        "detail": "src.edges_verification",
         "documentation": {}
     },
     {
@@ -81,20 +115,29 @@
         "documentation": {}
     },
     {
+        "label": "prune",
+        "kind": 2,
+        "importPath": "src.ullman_algorithm",
+        "description": "src.ullman_algorithm",
+        "peekOfCode": "def prune(M, G_a, G_b):\n    changed = True\n    while changed:\n        changed = False\n        for i in range(M.shape[0]):  # Para cada fila\n            for j in range(M.shape[1]):  # Para cada columna\n                if M[i, j] == 1:\n                    for neighbor_x in neighbors(G_a, i):\n                        found_neighbor = False\n                        for neighbor_y in neighbors(G_b, j):",
+        "detail": "src.ullman_algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "neighbors",
+        "kind": 2,
+        "importPath": "src.ullman_algorithm",
+        "description": "src.ullman_algorithm",
+        "peekOfCode": "def neighbors(graph, vertex):\n    neighbors_list = []\n    for i in range(len(graph)):\n        if graph[vertex][i] == 1:\n            neighbors_list.append(i)\n    return neighbors_list\ndef is_isomorphism(M_prime, G_a, G_b):\n    \"\"\"\n    Checks if a given mapping matrix M_prime represents an isomorphism between G_a and G_b.\n    Parameters:",
+        "detail": "src.ullman_algorithm",
+        "documentation": {}
+    },
+    {
         "label": "is_isomorphism",
         "kind": 2,
         "importPath": "src.ullman_algorithm",
         "description": "src.ullman_algorithm",
         "peekOfCode": "def is_isomorphism(M_prime, G_a, G_b):\n    \"\"\"\n    Checks if a given mapping matrix M_prime represents an isomorphism between G_a and G_b.\n    Parameters:\n    M_prime (ndarray): Current mapping matrix.\n    G_a (ndarray): Adjacency matrix of graph A.\n    G_b (ndarray): Adjacency matrix of graph B.\n    Returns:\n    bool: True if M_prime represents an isomorphism, False otherwise.\n    \"\"\"",
-        "detail": "src.ullman_algorithm",
-        "documentation": {}
-    },
-    {
-        "label": "prune",
-        "kind": 2,
-        "importPath": "src.ullman_algorithm",
-        "description": "src.ullman_algorithm",
-        "peekOfCode": "def prune(M):\n    \"\"\"\n    Prunes the candidate matrix M to improve efficiency.\n    Parameters:\n    M (ndarray): Candidate matrix to be pruned.\n    Returns:\n    None\n    \"\"\"\n    pass  # Implement pruning logic here\ndef recurse(used_columns, cur_row, G_a, G_b, M_prime):",
         "detail": "src.ullman_algorithm",
         "documentation": {}
     },
@@ -121,7 +164,7 @@
         "kind": 5,
         "importPath": "src.ullman_algorithm",
         "description": "src.ullman_algorithm",
-        "peekOfCode": "g_a = np.array([[0, 0,1 ],\n                [0, 0,0 ],\n                [1, 0,0 ]])\n  # Graph A adjacency matrix\ng_b = np.array([[0, 1], [1, 0]])  # Graph B adjacency matrix\nullman_algorithm(g_b, g_a)",
+        "peekOfCode": "g_a = np.array([[0, 0,1 ],\n                [0, 0,0 ],\n                [1, 0,0 ]])\n  # Graph A adjacency matrix\ng_b = np.array([[0, 1], [1, 0]])  # Graph B adjacency matrix\nprint(ullman_algorithm(g_b, g_a))",
         "detail": "src.ullman_algorithm",
         "documentation": {}
     },
@@ -130,7 +173,7 @@
         "kind": 5,
         "importPath": "src.ullman_algorithm",
         "description": "src.ullman_algorithm",
-        "peekOfCode": "g_b = np.array([[0, 1], [1, 0]])  # Graph B adjacency matrix\nullman_algorithm(g_b, g_a)",
+        "peekOfCode": "g_b = np.array([[0, 1], [1, 0]])  # Graph B adjacency matrix\nprint(ullman_algorithm(g_b, g_a))",
         "detail": "src.ullman_algorithm",
         "documentation": {}
     },
