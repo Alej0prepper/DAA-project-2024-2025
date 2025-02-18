@@ -146,11 +146,11 @@ def ullman_algorithm(G_a, G_b):
     else:
         return False
 
-# Example usage
-g_a = np.array([[0, 0,1 ],
-                [0, 0,0 ],
-                [1, 0,0 ]])
-  # Graph A adjacency matrix
-g_b = np.array([[0, 1], [1, 0]])  # Graph B adjacency matrix
+# # Example usage
+# g_a = np.array([[0, 0,1 ],
+#                 [0, 0,0 ],
+#                 [1, 0,0 ]])
+#   # Graph A adjacency matrix
+# g_b = np.array([[0, 1], [1, 0]])  # Graph B adjacency matrix
 
-print(ullman_algorithm(g_b, g_a))
+# print(ullman_algorithm(g_b, g_a))
