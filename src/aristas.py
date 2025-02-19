@@ -22,6 +22,7 @@ def comparar_subgrafos(grafo1, grafo2):
     # Iterar a través de cada subgrafo y compararlo con el grafo menor
     for subgrafo in subgrafos:
         if(comparar_aristas(subgrafo, grafo_menor)): return True
+    return False
 
 def encontrar_subgrafos(grafo_mayor, tamano_menor):
     """
