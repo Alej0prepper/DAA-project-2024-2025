@@ -9,16 +9,12 @@ def comparar_subgrafos(grafo1, grafo2):
 
     nodos_grafo1 = len(grafo1)
     nodos_grafo2 = len(grafo2)
-
-    # Determinar el grafo mayor
-    if nodos_grafo1 >= nodos_grafo2:
-        grafo_mayor = grafo1
-        grafo_menor = grafo2
-        tamano_menor = nodos_grafo2
-    else:
-        grafo_mayor = grafo2
-        grafo_menor = grafo1
-        tamano_menor = nodos_grafo1
+    if nodos_grafo1 > nodos_grafo2:
+        return False
+    
+    grafo_mayor = grafo2
+    grafo_menor = grafo1
+    tamano_menor = nodos_grafo1
 
     # Encontrar todos los subgrafos del grafo mayor del tamaño del grafo menor
     subgrafos = encontrar_subgrafos(grafo_mayor, tamano_menor)
