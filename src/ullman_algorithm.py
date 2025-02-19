@@ -137,6 +137,8 @@ def ullman_algorithm(G_a, G_b):
     Returns:
     None
     """
+    if (len(G_a)>len(G_b):
+        return False
     M0 = initialize_m0(G_a, G_b)
     pa = len(G_a)
     M_prime = np.zeros_like(M0)
