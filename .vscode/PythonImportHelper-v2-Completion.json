@@ -181,7 +181,7 @@
         "kind": 2,
         "importPath": "src.ullman_algorithm",
         "description": "src.ullman_algorithm",
-        "peekOfCode": "def ullman_algorithm(G_a, G_b):\n    \"\"\"\n    Implements Ullmann's subgraph isomorphism algorithm.\n    Parameters:\n    G_a (ndarray): Adjacency matrix of the pattern graph A.\n    G_b (ndarray): Adjacency matrix of the target graph B.\n    Returns:\n    None\n    \"\"\"\n    M0 = initialize_m0(G_a, G_b)",
+        "peekOfCode": "def ullman_algorithm(G_a, G_b):\n    \"\"\"\n    Implements Ullmann's subgraph isomorphism algorithm.\n    Parameters:\n    G_a (ndarray): Adjacency matrix of the pattern graph A.\n    G_b (ndarray): Adjacency matrix of the target graph B.\n    Returns:\n    None\n    \"\"\"\n    if len(G_a)>len(G_b):",
         "detail": "src.ullman_algorithm",
         "documentation": {}
     },
