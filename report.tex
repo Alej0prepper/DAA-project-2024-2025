@@ -19,7 +19,7 @@
 \usepackage{minted}
 \usepackage{algpseudocode}
 
-\title{Isomorfismo de subgrafos}
+\title{Planificación Urbana e Isomorfismo de subgrafos}
 \author{
     Universidad de la Habana\\
     Facultad de matematica y computacion\\
@@ -279,7 +279,7 @@ Pasos del algoritmo
 \begin{enumerate}
     \item \textbf{Encontrar subgrafos de tamaño igual a $G_1$ en $G_2$:}
     \begin{itemize}
-        \item Primero, buscamos todos los subgrafos dentro de $G_2$ que tengan el mismo tamaño que $G_1$. Para hacerlo, tomamos todos los posibles subconjuntos de $k$ nodos en $G_2$ y verificamos si forman un subgrafo. Este proceso tiene una complejidad de $\mathcal{O}\left(\binom{n}{k} \cdot n^2\right)$.
+        \item Primero, buscamos todos los subgrafos dentro de $G_2$ que tengan el mismo tamaño que $G_1$. Para hacerlo, tomamos todos los posibles subconjuntos de $k$ nodos en $G_2$ y construimos sus matrices de adyacencia. Este proceso tiene una complejidad de $\mathcal{O}\left(\binom{n}{k} \cdot n^2\right)$.
     \end{itemize}
     
     \item \textbf{Calcular los grados de cada nodo:}
@@ -315,6 +315,9 @@ es mejor que el primero que se analiza en este trabajo siendo su complejidad $O(
 
 En cuanto a la complejidad espacial, esta es \( \mathcal{O}\left(\binom{n}{k} \cdot n^2\right) \), debido al uso de matrices de adyacencia.
 
+\subsubsection{Correctitud}
+
+El algoritmo presenta una mejora en la complejidad computacional en determinados casos, como se explicó previamente. Su precisión es de aproximadamente el 90\% de los casos, lo cual constituye una buena referencia para estimar si un diseño es válido sin necesidad de ejecutar el algoritmo de Ullmann, que es más complejo. Además, al verificar condiciones necesarias, el algoritmo ofrece una confiabilidad elevada, ya que si el resultado es negativo, significa que no se cumplen las condiciones necesarias para el isomorfismo. De esta forma, sin ejecutar el algoritmo de Ullmann, podemos determinar que no se trata de un isomorfismo de subgrafos.
 
 \bibliographystyle{plain}
 \bibliography{referencias}
