@@ -1,4 +1,4 @@
-from aristas import comparar_subgrafos
+from edges import comparar_subgrafos
 from ullman_algorithm import ullman_algorithm
 import numpy as np
 g_a = np.array([[0, 0,1 ],
