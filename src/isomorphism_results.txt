@@ -1,50 +1,4774 @@
-Test 1: Agreement 100.00%, Disagreement 0.00%
-Test 2: Agreement 100.00%, Disagreement 0.00%
-Test 3: Agreement 87.50%, Disagreement 12.50%
-Test 4: Agreement 100.00%, Disagreement 0.00%
-Test 5: Agreement 84.62%, Disagreement 15.38%
-Test 6: Agreement 87.50%, Disagreement 12.50%
-Test 7: Agreement 90.91%, Disagreement 9.09%
-Test 8: Agreement 90.91%, Disagreement 9.09%
-Test 9: Agreement 85.71%, Disagreement 14.29%
-Test 10: Agreement 75.00%, Disagreement 25.00%
-Test 11: Agreement 62.50%, Disagreement 37.50%
-Test 12: Agreement 92.31%, Disagreement 7.69%
-Test 13: Agreement 100.00%, Disagreement 0.00%
-Test 14: Agreement 70.00%, Disagreement 30.00%
-Test 15: Agreement 88.89%, Disagreement 11.11%
-Test 16: Agreement 90.00%, Disagreement 10.00%
-Test 17: Agreement 91.67%, Disagreement 8.33%
-Test 18: Agreement 100.00%, Disagreement 0.00%
-Test 19: Agreement 100.00%, Disagreement 0.00%
-Test 20: Agreement 85.71%, Disagreement 14.29%
-Test 21: Agreement 100.00%, Disagreement 0.00%
-Test 22: Agreement 100.00%, Disagreement 0.00%
-Test 23: Agreement 40.00%, Disagreement 60.00%
-Test 24: Agreement 100.00%, Disagreement 0.00%
-Test 25: Agreement 87.50%, Disagreement 12.50%
-Test 26: Agreement 100.00%, Disagreement 0.00%
-Test 27: Agreement 63.64%, Disagreement 36.36%
-Test 28: Agreement 90.00%, Disagreement 10.00%
-Test 29: Agreement 100.00%, Disagreement 0.00%
-Test 30: Agreement 100.00%, Disagreement 0.00%
-Test 31: Agreement 100.00%, Disagreement 0.00%
-Test 32: Agreement 90.00%, Disagreement 10.00%
-Test 33: Agreement 100.00%, Disagreement 0.00%
-Test 34: Agreement 87.50%, Disagreement 12.50%
-Test 35: Agreement 83.33%, Disagreement 16.67%
-Test 36: Agreement 85.71%, Disagreement 14.29%
-Test 37: Agreement 85.71%, Disagreement 14.29%
-Test 38: Agreement 88.89%, Disagreement 11.11%
-Test 39: Agreement 87.50%, Disagreement 12.50%
-Test 40: Agreement 100.00%, Disagreement 0.00%
-Test 41: Agreement 81.82%, Disagreement 18.18%
-Test 42: Agreement 100.00%, Disagreement 0.00%
-Test 43: Agreement 77.78%, Disagreement 22.22%
-Test 44: Agreement 87.50%, Disagreement 12.50%
-Test 45: Agreement 83.33%, Disagreement 16.67%
-Test 46: Agreement 100.00%, Disagreement 0.00%
-Test 47: Agreement 100.00%, Disagreement 0.00%
-Test 48: Agreement 100.00%, Disagreement 0.00%
-Test 49: Agreement 77.78%, Disagreement 22.22%
-Test 50: Agreement 77.78%, Disagreement 22.22%
+
+Test 1.1:
+Graph 1 adjacency matrix:
+[[0. 1. 0. 0. 0.]
+ [1. 0. 1. 1. 0.]
+ [0. 1. 0. 1. 1.]
+ [0. 1. 1. 0. 0.]
+ [0. 0. 1. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 1. 0. 0.]
+ [0. 0. 0. 1. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [1. 1. 0. 0. 1. 0.]
+ [0. 0. 0. 1. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 1.2:
+Graph 1 adjacency matrix:
+[[0. 0. 1. 1.]
+ [0. 0. 0. 1.]
+ [1. 0. 0. 0.]
+ [1. 1. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0. 0.]
+ [1. 0. 1. 0.]
+ [0. 1. 0. 1.]
+ [0. 0. 1. 0.]]
+Result: Agreement
+
+Test 2.1:
+Graph 1 adjacency matrix:
+[[0. 1. 1. 1.]
+ [1. 0. 0. 1.]
+ [1. 0. 0. 1.]
+ [1. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0. 0. 1.]
+ [0. 0. 0. 1. 1. 1.]
+ [1. 0. 0. 0. 0. 1.]
+ [0. 1. 0. 0. 1. 0.]
+ [0. 1. 0. 1. 0. 0.]
+ [1. 1. 1. 0. 0. 0.]]
+Result: Agreement
+
+Test 2.2:
+Graph 1 adjacency matrix:
+[[0. 1. 1. 1.]
+ [1. 0. 0. 1.]
+ [1. 0. 0. 1.]
+ [1. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 1. 0.]
+ [0. 0. 1. 1. 1.]
+ [0. 1. 0. 1. 0.]
+ [1. 1. 1. 0. 0.]
+ [0. 1. 0. 0. 0.]]
+Result: Agreement
+
+Test 2.3:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 2.4:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 1. 0.]
+ [0. 0. 1. 1. 1.]
+ [0. 1. 0. 1. 0.]
+ [1. 1. 1. 0. 0.]
+ [0. 1. 0. 0. 0.]]
+Result: Agreement
+
+Test 2.5:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0.]
+ [1. 0. 0.]
+ [0. 0. 0.]]
+Result: Agreement
+
+Test 2.6:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 1. 0.]
+ [0. 0. 1. 1. 1.]
+ [0. 1. 0. 1. 0.]
+ [1. 1. 1. 0. 0.]
+ [0. 1. 0. 0. 0.]]
+Result: Agreement
+
+Test 2.7:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0.]
+ [1. 0. 0.]
+ [0. 0. 0.]]
+Result: Agreement
+
+Test 3.1:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 3.2:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 3.3:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0.]]
+Result: Agreement
+
+Test 3.4:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0.]]
+Result: Agreement
+
+Test 3.5:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 3.6:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 3.7:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0.]]
+Result: Agreement
+
+Test 3.8:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 3.9:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 3.10:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 3.11:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 3.12:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 4.1:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 1. 1.]
+ [0. 0. 1. 1. 1.]
+ [0. 1. 0. 0. 1.]
+ [1. 1. 0. 0. 1.]
+ [1. 1. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 0.]
+ [1. 0. 1. 1. 0.]
+ [1. 1. 0. 1. 0.]
+ [1. 1. 1. 0. 1.]
+ [0. 0. 0. 1. 0.]]
+Result: Agreement
+
+Test 4.2:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 1. 1.]
+ [0. 0. 1. 1. 1.]
+ [0. 1. 0. 0. 1.]
+ [1. 1. 0. 0. 1.]
+ [1. 1. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 1. 0. 0.]
+ [0. 0. 1. 1. 1. 0.]
+ [0. 1. 0. 0. 1. 1.]
+ [1. 1. 0. 0. 0. 1.]
+ [0. 1. 1. 0. 0. 0.]
+ [0. 0. 1. 1. 0. 0.]]
+Result: Agreement
+
+Test 4.3:
+Graph 1 adjacency matrix:
+[[0. 0. 1.]
+ [0. 0. 0.]
+ [1. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 0.]
+ [1. 0. 1. 1. 0.]
+ [1. 1. 0. 1. 0.]
+ [1. 1. 1. 0. 1.]
+ [0. 0. 0. 1. 0.]]
+Result: Agreement
+
+Test 4.4:
+Graph 1 adjacency matrix:
+[[0. 0. 1.]
+ [0. 0. 0.]
+ [1. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 1. 0. 0.]
+ [0. 0. 1. 1. 1. 0.]
+ [0. 1. 0. 0. 1. 1.]
+ [1. 1. 0. 0. 0. 1.]
+ [0. 1. 1. 0. 0. 0.]
+ [0. 0. 1. 1. 0. 0.]]
+Result: Agreement
+
+Test 4.5:
+Graph 1 adjacency matrix:
+[[0. 0. 1.]
+ [0. 0. 0.]
+ [1. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 0.]
+ [1. 0. 0.]]
+Result: Disagreement
+
+Test 4.6:
+Graph 1 adjacency matrix:
+[[0. 1. 1. 1. 0.]
+ [1. 0. 1. 1. 0.]
+ [1. 1. 0. 1. 0.]
+ [1. 1. 1. 0. 1.]
+ [0. 0. 0. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 1. 0. 0.]
+ [0. 0. 1. 1. 1. 0.]
+ [0. 1. 0. 0. 1. 1.]
+ [1. 1. 0. 0. 0. 1.]
+ [0. 1. 1. 0. 0. 0.]
+ [0. 0. 1. 1. 0. 0.]]
+Result: Agreement
+
+Test 4.7:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 1. 0. 0.]
+ [0. 0. 1. 1. 1. 0.]
+ [0. 1. 0. 0. 1. 1.]
+ [1. 1. 0. 0. 0. 1.]
+ [0. 1. 1. 0. 0. 0.]
+ [0. 0. 1. 1. 0. 0.]]
+Result: Agreement
+
+Test 4.8:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 0.]
+ [1. 0. 0.]]
+Result: Agreement
+
+Test 5.1:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 5.2:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 5.3:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 1. 1.]
+ [1. 0. 1. 1. 1. 1.]
+ [1. 1. 0. 1. 1. 1.]
+ [1. 1. 1. 0. 1. 1.]
+ [1. 1. 1. 1. 0. 1.]
+ [1. 1. 1. 1. 1. 0.]]
+Result: Agreement
+
+Test 5.4:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 0.]
+ [1. 0. 0.]]
+Result: Agreement
+
+Test 5.5:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0. 1.]
+ [0. 0. 1. 1. 1.]
+ [1. 1. 0. 1. 1.]
+ [0. 1. 1. 0. 1.]
+ [1. 1. 1. 1. 0.]]
+Result: Agreement
+
+Test 5.6:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 5.7:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 1. 1.]
+ [1. 0. 1. 1. 1. 1.]
+ [1. 1. 0. 1. 1. 1.]
+ [1. 1. 1. 0. 1. 1.]
+ [1. 1. 1. 1. 0. 1.]
+ [1. 1. 1. 1. 1. 0.]]
+Result: Agreement
+
+Test 5.8:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 0.]
+ [1. 0. 0.]]
+Result: Agreement
+
+Test 5.9:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0. 1.]
+ [0. 0. 1. 1. 1.]
+ [1. 1. 0. 1. 1.]
+ [0. 1. 1. 0. 1.]
+ [1. 1. 1. 1. 0.]]
+Result: Agreement
+
+Test 5.10:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 1. 1.]
+ [1. 0. 1. 1. 1. 1.]
+ [1. 1. 0. 1. 1. 1.]
+ [1. 1. 1. 0. 1. 1.]
+ [1. 1. 1. 1. 0. 1.]
+ [1. 1. 1. 1. 1. 0.]]
+Result: Agreement
+
+Test 5.11:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 0.]
+ [1. 0. 0.]]
+Result: Agreement
+
+Test 5.12:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0. 1.]
+ [0. 0. 1. 1. 1.]
+ [1. 1. 0. 1. 1.]
+ [0. 1. 1. 0. 1.]
+ [1. 1. 1. 1. 0.]]
+Result: Agreement
+
+Test 5.13:
+Graph 1 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 0.]
+ [1. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0. 1.]
+ [0. 0. 1. 1. 1.]
+ [1. 1. 0. 1. 1.]
+ [0. 1. 1. 0. 1.]
+ [1. 1. 1. 1. 0.]]
+Result: Agreement
+
+Test 6.1:
+Graph 1 adjacency matrix:
+[[0. 1. 0.]
+ [1. 0. 1.]
+ [0. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0. 0. 1. 0.]
+ [1. 0. 0. 0. 1. 1.]
+ [0. 0. 0. 1. 1. 1.]
+ [0. 0. 1. 0. 1. 1.]
+ [1. 1. 1. 1. 0. 1.]
+ [0. 1. 1. 1. 1. 0.]]
+Result: Agreement
+
+Test 6.2:
+Graph 1 adjacency matrix:
+[[0. 1. 0.]
+ [1. 0. 1.]
+ [0. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 1. 0.]]
+Result: Agreement
+
+Test 6.3:
+Graph 1 adjacency matrix:
+[[0. 1. 0.]
+ [1. 0. 1.]
+ [0. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1.]
+ [1. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [1. 1. 1. 0.]]
+Result: Disagreement
+
+Test 6.4:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0. 0. 1. 0.]
+ [1. 0. 0. 0. 1. 1.]
+ [0. 0. 0. 1. 1. 1.]
+ [0. 0. 1. 0. 1. 1.]
+ [1. 1. 1. 1. 0. 1.]
+ [0. 1. 1. 1. 1. 0.]]
+Result: Agreement
+
+Test 6.5:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 1. 0.]]
+Result: Agreement
+
+Test 6.6:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1.]
+ [1. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [1. 1. 1. 0.]]
+Result: Agreement
+
+Test 6.7:
+Graph 1 adjacency matrix:
+[[0. 1. 0. 0. 1. 0.]
+ [1. 0. 0. 0. 1. 1.]
+ [0. 0. 0. 1. 1. 1.]
+ [0. 0. 1. 0. 1. 1.]
+ [1. 1. 1. 1. 0. 1.]
+ [0. 1. 1. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 1. 0.]]
+Result: Agreement
+
+Test 7.1:
+Graph 1 adjacency matrix:
+[[0. 0. 1. 1.]
+ [0. 0. 1. 0.]
+ [1. 1. 0. 1.]
+ [1. 0. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 0.]
+ [0. 0. 1. 0. 0.]
+ [0. 1. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 7.2:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0.]]
+Result: Agreement
+
+Test 8.1:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 1. 0.]
+ [0. 0. 1. 1. 1.]
+ [0. 1. 0. 1. 0.]
+ [1. 1. 1. 0. 1.]
+ [0. 1. 0. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 1.]
+ [1. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 1.]
+ [1. 0. 0. 0. 1.]
+ [1. 0. 1. 1. 0.]]
+Result: Agreement
+
+Test 8.2:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 1. 0.]
+ [0. 0. 1. 1. 1.]
+ [0. 1. 0. 1. 0.]
+ [1. 1. 1. 0. 1.]
+ [0. 1. 0. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 0. 0.]
+ [1. 0. 1. 1. 1. 1.]
+ [1. 1. 0. 1. 1. 0.]
+ [1. 1. 1. 0. 0. 1.]
+ [0. 1. 1. 0. 0. 0.]
+ [0. 1. 0. 1. 0. 0.]]
+Result: Agreement
+
+Test 8.3:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 1.]
+ [1. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 1.]
+ [1. 0. 0. 0. 1.]
+ [1. 0. 1. 1. 0.]]
+Result: Agreement
+
+Test 8.4:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 0. 0.]
+ [1. 0. 1. 1. 1. 1.]
+ [1. 1. 0. 1. 1. 0.]
+ [1. 1. 1. 0. 0. 1.]
+ [0. 1. 1. 0. 0. 0.]
+ [0. 1. 0. 1. 0. 0.]]
+Result: Agreement
+
+Test 8.5:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1.]
+ [1. 0. 0. 1.]
+ [1. 0. 0. 1.]
+ [1. 1. 1. 0.]]
+Result: Agreement
+
+Test 8.6:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 8.7:
+Graph 1 adjacency matrix:
+[[0. 1. 1. 1. 1.]
+ [1. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 1.]
+ [1. 0. 0. 0. 1.]
+ [1. 0. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 0. 0.]
+ [1. 0. 1. 1. 1. 1.]
+ [1. 1. 0. 1. 1. 0.]
+ [1. 1. 1. 0. 0. 1.]
+ [0. 1. 1. 0. 0. 0.]
+ [0. 1. 0. 1. 0. 0.]]
+Result: Agreement
+
+Test 9.1:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 0. 1.]
+ [0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 1.]
+ [0. 1. 0. 0. 0.]
+ [1. 0. 1. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 1. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 1. 0. 0.]]
+Result: Agreement
+
+Test 9.2:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 0. 1.]
+ [0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 1.]
+ [0. 1. 0. 0. 0.]
+ [1. 0. 1. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 1.]
+ [0. 0. 1. 1. 1.]
+ [0. 1. 0. 1. 1.]
+ [0. 1. 1. 0. 0.]
+ [1. 1. 1. 0. 0.]]
+Result: Disagreement
+
+Test 9.3:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 0. 1.]
+ [0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 1.]
+ [0. 1. 0. 0. 0.]
+ [1. 0. 1. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 1. 1.]
+ [0. 0. 1. 1. 0. 0.]
+ [0. 1. 0. 0. 1. 1.]
+ [0. 1. 0. 0. 1. 1.]
+ [1. 0. 1. 1. 0. 1.]
+ [1. 0. 1. 1. 1. 0.]]
+Result: Disagreement
+
+Test 9.4:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 1. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 1. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 1. 1.]
+ [0. 0. 1. 1. 0. 0.]
+ [0. 1. 0. 0. 1. 1.]
+ [0. 1. 0. 0. 1. 1.]
+ [1. 0. 1. 1. 0. 1.]
+ [1. 0. 1. 1. 1. 0.]]
+Result: Disagreement
+
+Test 9.5:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 1.]
+ [0. 0. 1. 1. 1.]
+ [0. 1. 0. 1. 1.]
+ [0. 1. 1. 0. 0.]
+ [1. 1. 1. 0. 0.]]
+Result: Agreement
+
+Test 9.6:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 1. 1.]
+ [0. 0. 1. 1. 0. 0.]
+ [0. 1. 0. 0. 1. 1.]
+ [0. 1. 0. 0. 1. 1.]
+ [1. 0. 1. 1. 0. 1.]
+ [1. 0. 1. 1. 1. 0.]]
+Result: Agreement
+
+Test 9.7:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 1.]
+ [0. 0. 1. 1. 1.]
+ [0. 1. 0. 1. 1.]
+ [0. 1. 1. 0. 0.]
+ [1. 1. 1. 0. 0.]]
+Result: Agreement
+
+Test 9.8:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 1. 1.]
+ [0. 0. 1. 1. 0. 0.]
+ [0. 1. 0. 0. 1. 1.]
+ [0. 1. 0. 0. 1. 1.]
+ [1. 0. 1. 1. 0. 1.]
+ [1. 0. 1. 1. 1. 0.]]
+Result: Agreement
+
+Test 9.9:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 0. 1.]
+ [0. 0. 1. 1. 1.]
+ [0. 1. 0. 1. 1.]
+ [0. 1. 1. 0. 0.]
+ [1. 1. 1. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 1. 1.]
+ [0. 0. 1. 1. 0. 0.]
+ [0. 1. 0. 0. 1. 1.]
+ [0. 1. 0. 0. 1. 1.]
+ [1. 0. 1. 1. 0. 1.]
+ [1. 0. 1. 1. 1. 0.]]
+Result: Agreement
+
+Test 10.1:
+Graph 1 adjacency matrix:
+[[0. 0. 1. 0.]
+ [0. 0. 0. 1.]
+ [1. 0. 0. 0.]
+ [0. 1. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 1. 1.]
+ [1. 0. 1. 1. 1. 1.]
+ [1. 1. 0. 0. 1. 1.]
+ [1. 1. 0. 0. 1. 1.]
+ [1. 1. 1. 1. 0. 1.]
+ [1. 1. 1. 1. 1. 0.]]
+Result: Disagreement
+
+Test 10.2:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0.]
+ [0. 0. 1.]
+ [0. 1. 0.]]
+Result: Agreement
+
+Test 10.3:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 10.4:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0.]
+ [1. 0. 1.]
+ [0. 1. 0.]]
+Result: Agreement
+
+Test 10.5:
+Graph 1 adjacency matrix:
+[[0. 0. 0.]
+ [0. 0. 1.]
+ [0. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0.]
+ [1. 0. 1.]
+ [0. 1. 0.]]
+Result: Disagreement
+
+Test 10.6:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0.]
+ [1. 0. 1.]
+ [0. 1. 0.]]
+Result: Agreement
+
+Test 11.1:
+Graph 1 adjacency matrix:
+[[0. 1. 1. 1.]
+ [1. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [1. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 1.]
+ [0. 0. 1. 0.]
+ [1. 1. 0. 0.]
+ [1. 0. 0. 0.]]
+Result: Agreement
+
+Test 11.2:
+Graph 1 adjacency matrix:
+[[0. 1. 1. 1.]
+ [1. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [1. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 0.]
+ [1. 0. 1. 1. 1.]
+ [1. 1. 0. 1. 1.]
+ [1. 1. 1. 0. 1.]
+ [0. 1. 1. 1. 0.]]
+Result: Agreement
+
+Test 11.3:
+Graph 1 adjacency matrix:
+[[0. 1. 1. 1.]
+ [1. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [1. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 0.]
+ [1. 0. 1. 1. 1.]
+ [1. 1. 0. 1. 1.]
+ [1. 1. 1. 0. 1.]
+ [0. 1. 1. 1. 0.]]
+Result: Agreement
+
+Test 11.4:
+Graph 1 adjacency matrix:
+[[0. 0. 1. 1.]
+ [0. 0. 1. 0.]
+ [1. 1. 0. 0.]
+ [1. 0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 0.]
+ [1. 0. 1. 1. 1.]
+ [1. 1. 0. 1. 1.]
+ [1. 1. 1. 0. 1.]
+ [0. 1. 1. 1. 0.]]
+Result: Disagreement
+
+Test 11.5:
+Graph 1 adjacency matrix:
+[[0. 0. 1. 1.]
+ [0. 0. 1. 0.]
+ [1. 1. 0. 0.]
+ [1. 0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 0.]
+ [1. 0. 1. 1. 1.]
+ [1. 1. 0. 1. 1.]
+ [1. 1. 1. 0. 1.]
+ [0. 1. 1. 1. 0.]]
+Result: Disagreement
+
+Test 11.6:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 0.]
+ [1. 0. 1. 1. 1.]
+ [1. 1. 0. 1. 1.]
+ [1. 1. 1. 0. 1.]
+ [0. 1. 1. 1. 0.]]
+Result: Agreement
+
+Test 11.7:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 0.]
+ [1. 0. 1. 1. 1.]
+ [1. 1. 0. 1. 1.]
+ [1. 1. 1. 0. 1.]
+ [0. 1. 1. 1. 0.]]
+Result: Agreement
+
+Test 11.8:
+Graph 1 adjacency matrix:
+[[0. 1. 1. 1. 0.]
+ [1. 0. 1. 1. 1.]
+ [1. 1. 0. 1. 1.]
+ [1. 1. 1. 0. 1.]
+ [0. 1. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 0.]
+ [1. 0. 1. 1. 1.]
+ [1. 1. 0. 1. 1.]
+ [1. 1. 1. 0. 1.]
+ [0. 1. 1. 1. 0.]]
+Result: Agreement
+
+Test 12.1:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0. 0.]
+ [0. 0. 1. 0. 0. 0.]]
+Result: Agreement
+
+Test 12.2:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 0.]
+ [0. 0. 0. 1. 1.]
+ [0. 0. 0. 1. 0.]
+ [0. 1. 1. 0. 0.]
+ [0. 1. 0. 0. 0.]]
+Result: Agreement
+
+Test 12.3:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 1. 1.]
+ [0. 0. 0. 1. 0. 0.]
+ [0. 0. 0. 1. 0. 0.]]
+Result: Agreement
+
+Test 12.4:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0. 0.]
+ [0. 0. 1. 0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 1. 1.]
+ [0. 0. 0. 1. 0. 0.]
+ [0. 0. 0. 1. 0. 0.]]
+Result: Disagreement
+
+Test 12.5:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 0.]
+ [0. 0. 0. 1. 1.]
+ [0. 0. 0. 1. 0.]
+ [0. 1. 1. 0. 0.]
+ [0. 1. 0. 0. 0.]]
+Result: Agreement
+
+Test 12.6:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 1. 1.]
+ [0. 0. 0. 1. 0. 0.]
+ [0. 0. 0. 1. 0. 0.]]
+Result: Agreement
+
+Test 12.7:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0.]]
+Result: Agreement
+
+Test 12.8:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 0. 0.]
+ [0. 0. 0. 1. 1.]
+ [0. 0. 0. 1. 0.]
+ [0. 1. 1. 0. 0.]
+ [0. 1. 0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 1. 1.]
+ [0. 0. 0. 1. 0. 0.]
+ [0. 0. 0. 1. 0. 0.]]
+Result: Agreement
+
+Test 13.1:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 0. 0.]
+ [1. 0. 1. 1. 1. 1.]
+ [1. 1. 0. 1. 1. 1.]
+ [1. 1. 1. 0. 0. 0.]
+ [0. 1. 1. 0. 0. 1.]
+ [0. 1. 1. 0. 1. 0.]]
+Result: Agreement
+
+Test 13.2:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0.]
+ [1. 0. 1.]
+ [0. 1. 0.]]
+Result: Agreement
+
+Test 13.3:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 0.]
+ [1. 0. 0.]]
+Result: Agreement
+
+Test 13.4:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0.]
+ [1. 0. 0. 1.]
+ [1. 0. 0. 1.]
+ [0. 1. 1. 0.]]
+Result: Agreement
+
+Test 13.5:
+Graph 1 adjacency matrix:
+[[0. 1. 0.]
+ [1. 0. 1.]
+ [0. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 0.]
+ [1. 0. 0.]]
+Result: Agreement
+
+Test 13.6:
+Graph 1 adjacency matrix:
+[[0. 1. 0.]
+ [1. 0. 1.]
+ [0. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0.]
+ [1. 0. 0. 1.]
+ [1. 0. 0. 1.]
+ [0. 1. 1. 0.]]
+Result: Agreement
+
+Test 13.7:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 0.]
+ [1. 0. 0.]]
+Result: Agreement
+
+Test 13.8:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0.]
+ [1. 0. 0. 1.]
+ [1. 0. 0. 1.]
+ [0. 1. 1. 0.]]
+Result: Agreement
+
+Test 13.9:
+Graph 1 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 0.]
+ [1. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0.]
+ [1. 0. 0. 1.]
+ [1. 0. 0. 1.]
+ [0. 1. 1. 0.]]
+Result: Agreement
+
+Test 14.1:
+Graph 1 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1.]
+ [0. 0. 1.]
+ [1. 1. 0.]]
+Result: Agreement
+
+Test 14.2:
+Graph 1 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1.]
+ [1. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [1. 1. 1. 0.]]
+Result: Agreement
+
+Test 14.3:
+Graph 1 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1.]
+ [1. 0. 0. 1.]
+ [1. 0. 0. 1.]
+ [1. 1. 1. 0.]]
+Result: Agreement
+
+Test 14.4:
+Graph 1 adjacency matrix:
+[[0. 0. 1.]
+ [0. 0. 1.]
+ [1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1.]
+ [1. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [1. 1. 1. 0.]]
+Result: Disagreement
+
+Test 14.5:
+Graph 1 adjacency matrix:
+[[0. 0. 1.]
+ [0. 0. 1.]
+ [1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1.]
+ [1. 0. 0. 1.]
+ [1. 0. 0. 1.]
+ [1. 1. 1. 0.]]
+Result: Agreement
+
+Test 14.6:
+Graph 1 adjacency matrix:
+[[0. 1. 1. 1.]
+ [1. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [1. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1.]
+ [1. 0. 0. 1.]
+ [1. 0. 0. 1.]
+ [1. 1. 1. 0.]]
+Result: Agreement
+
+Test 14.7:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1.]
+ [1. 0. 0. 1.]
+ [1. 0. 0. 1.]
+ [1. 1. 1. 0.]]
+Result: Agreement
+
+Test 15.1:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 15.2:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0.]]
+Result: Agreement
+
+Test 15.3:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 15.4:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Result: Agreement
+
+Test 15.5:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 15.6:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 15.7:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Result: Agreement
+
+Test 15.8:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 15.9:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 15.10:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Result: Agreement
+
+Test 15.11:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 15.12:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Result: Agreement
+
+Test 15.13:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 16.1:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 1. 1.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 16.2:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 16.3:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 1. 0.]
+ [1. 0. 1. 1. 1. 0.]
+ [1. 1. 0. 1. 1. 0.]
+ [1. 1. 1. 0. 1. 1.]
+ [1. 1. 1. 1. 0. 1.]
+ [0. 0. 0. 1. 1. 0.]]
+Result: Agreement
+
+Test 16.4:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 1.]
+ [1. 0. 1. 0. 0.]
+ [1. 1. 0. 1. 1.]
+ [1. 0. 1. 0. 1.]
+ [1. 0. 1. 1. 0.]]
+Result: Agreement
+
+Test 16.5:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1.]
+ [1. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [1. 1. 1. 0.]]
+Result: Agreement
+
+Test 16.6:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 0. 1. 1.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 1. 0.]
+ [1. 0. 1. 1. 1. 0.]
+ [1. 1. 0. 1. 1. 0.]
+ [1. 1. 1. 0. 1. 1.]
+ [1. 1. 1. 1. 0. 1.]
+ [0. 0. 0. 1. 1. 0.]]
+Result: Disagreement
+
+Test 16.7:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 1. 0.]
+ [1. 0. 1. 1. 1. 0.]
+ [1. 1. 0. 1. 1. 0.]
+ [1. 1. 1. 0. 1. 1.]
+ [1. 1. 1. 1. 0. 1.]
+ [0. 0. 0. 1. 1. 0.]]
+Result: Agreement
+
+Test 16.8:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 1.]
+ [1. 0. 1. 0. 0.]
+ [1. 1. 0. 1. 1.]
+ [1. 0. 1. 0. 1.]
+ [1. 0. 1. 1. 0.]]
+Result: Agreement
+
+Test 16.9:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1.]
+ [1. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [1. 1. 1. 0.]]
+Result: Agreement
+
+Test 17.1:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 1. 0. 1.]
+ [0. 0. 1. 1. 1. 1.]
+ [0. 1. 0. 0. 0. 0.]
+ [1. 1. 0. 0. 0. 0.]
+ [0. 1. 0. 0. 0. 0.]
+ [1. 1. 0. 0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 1. 1. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0. 1.]
+ [1. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 1. 0. 0.]]
+Result: Agreement
+
+Test 17.2:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Result: Agreement
+
+Test 18.1:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0. 0. 0. 0.]
+ [1. 0. 0. 1. 1. 1.]
+ [0. 0. 0. 1. 0. 0.]
+ [0. 1. 1. 0. 0. 0.]
+ [0. 1. 0. 0. 0. 1.]
+ [0. 1. 0. 0. 1. 0.]]
+Result: Agreement
+
+Test 18.2:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 18.3:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1.]
+ [1. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [1. 1. 1. 0.]]
+Result: Agreement
+
+Test 18.4:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0.]]
+Result: Agreement
+
+Test 18.5:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0. 0. 0. 0.]
+ [1. 0. 0. 1. 1. 1.]
+ [0. 0. 0. 1. 0. 0.]
+ [0. 1. 1. 0. 0. 0.]
+ [0. 1. 0. 0. 0. 1.]
+ [0. 1. 0. 0. 1. 0.]]
+Result: Agreement
+
+Test 18.6:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 18.7:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1.]
+ [1. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [1. 1. 1. 0.]]
+Result: Agreement
+
+Test 18.8:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0. 0. 0. 0.]
+ [1. 0. 0. 1. 1. 1.]
+ [0. 0. 0. 1. 0. 0.]
+ [0. 1. 1. 0. 0. 0.]
+ [0. 1. 0. 0. 0. 1.]
+ [0. 1. 0. 0. 1. 0.]]
+Result: Agreement
+
+Test 18.9:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 18.10:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1.]
+ [1. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [1. 1. 1. 0.]]
+Result: Agreement
+
+Test 18.11:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1.]
+ [1. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [1. 1. 1. 0.]]
+Result: Agreement
+
+Test 19.1:
+Graph 1 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 0.]
+ [1. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0.]
+ [0. 0. 1.]
+ [0. 1. 0.]]
+Result: Agreement
+
+Test 19.2:
+Graph 1 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 0.]
+ [1. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0. 0. 1.]
+ [1. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 19.3:
+Graph 1 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 0.]
+ [1. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0. 1. 0.]
+ [1. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0.]
+ [1. 1. 0. 0. 1.]
+ [0. 0. 0. 1. 0.]]
+Result: Agreement
+
+Test 19.4:
+Graph 1 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 0.]
+ [1. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0.]
+ [0. 0. 1.]
+ [0. 1. 0.]]
+Result: Agreement
+
+Test 19.5:
+Graph 1 adjacency matrix:
+[[0. 0. 0.]
+ [0. 0. 1.]
+ [0. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0. 0. 1.]
+ [1. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 19.6:
+Graph 1 adjacency matrix:
+[[0. 0. 0.]
+ [0. 0. 1.]
+ [0. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0. 1. 0.]
+ [1. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0.]
+ [1. 1. 0. 0. 1.]
+ [0. 0. 0. 1. 0.]]
+Result: Agreement
+
+Test 19.7:
+Graph 1 adjacency matrix:
+[[0. 0. 0.]
+ [0. 0. 1.]
+ [0. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0.]
+ [0. 0. 1.]
+ [0. 1. 0.]]
+Result: Agreement
+
+Test 19.8:
+Graph 1 adjacency matrix:
+[[0. 1. 0. 0. 1.]
+ [1. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0. 1. 0.]
+ [1. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0.]
+ [1. 1. 0. 0. 1.]
+ [0. 0. 0. 1. 0.]]
+Result: Disagreement
+
+Test 20.1:
+Graph 1 adjacency matrix:
+[[0. 1. 0.]
+ [1. 0. 0.]
+ [0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0. 1. 1.]
+ [1. 0. 1. 1. 1. 1.]
+ [1. 1. 0. 1. 0. 0.]
+ [0. 1. 1. 0. 0. 1.]
+ [1. 1. 0. 0. 0. 1.]
+ [1. 1. 0. 1. 1. 0.]]
+Result: Agreement
+
+Test 20.2:
+Graph 1 adjacency matrix:
+[[0. 1. 0.]
+ [1. 0. 0.]
+ [0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Result: Disagreement
+
+Test 20.3:
+Graph 1 adjacency matrix:
+[[0. 1. 0.]
+ [1. 0. 0.]
+ [0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Result: Disagreement
+
+Test 20.4:
+Graph 1 adjacency matrix:
+[[0. 1. 0.]
+ [1. 0. 0.]
+ [0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0. 1.]
+ [1. 0. 1. 1. 1.]
+ [1. 1. 0. 1. 1.]
+ [0. 1. 1. 0. 1.]
+ [1. 1. 1. 1. 0.]]
+Result: Disagreement
+
+Test 20.5:
+Graph 1 adjacency matrix:
+[[0. 1. 0.]
+ [1. 0. 0.]
+ [0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1.]
+ [1. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [1. 1. 1. 0.]]
+Result: Disagreement
+
+Test 20.6:
+Graph 1 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Result: Agreement
+
+Test 20.7:
+Graph 1 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0. 1.]
+ [1. 0. 1. 1. 1.]
+ [1. 1. 0. 1. 1.]
+ [0. 1. 1. 0. 1.]
+ [1. 1. 1. 1. 0.]]
+Result: Agreement
+
+Test 20.8:
+Graph 1 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1.]
+ [1. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [1. 1. 1. 0.]]
+Result: Agreement
+
+Test 20.9:
+Graph 1 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0. 1.]
+ [1. 0. 1. 1. 1.]
+ [1. 1. 0. 1. 1.]
+ [0. 1. 1. 0. 1.]
+ [1. 1. 1. 1. 0.]]
+Result: Agreement
+
+Test 20.10:
+Graph 1 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1.]
+ [1. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [1. 1. 1. 0.]]
+Result: Agreement
+
+Test 21.1:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 1.]
+ [0. 0. 1. 0.]
+ [0. 1. 0. 1.]
+ [1. 0. 1. 0.]]
+Result: Agreement
+
+Test 21.2:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 21.3:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 21.4:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0. 0. 0.]
+ [1. 0. 1. 0. 0.]
+ [0. 1. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 21.5:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 1. 0. 0.]
+ [0. 0. 1. 0. 1. 1.]
+ [0. 1. 0. 1. 0. 1.]
+ [1. 0. 1. 0. 1. 0.]
+ [0. 1. 0. 1. 0. 1.]
+ [0. 1. 1. 0. 1. 0.]]
+Result: Agreement
+
+Test 21.6:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 1.]
+ [0. 0. 1. 0.]
+ [0. 1. 0. 1.]
+ [1. 0. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 21.7:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 1.]
+ [0. 0. 1. 0.]
+ [0. 1. 0. 1.]
+ [1. 0. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 21.8:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 1.]
+ [0. 0. 1. 0.]
+ [0. 1. 0. 1.]
+ [1. 0. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0. 0. 0.]
+ [1. 0. 1. 0. 0.]
+ [0. 1. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 21.9:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 1.]
+ [0. 0. 1. 0.]
+ [0. 1. 0. 1.]
+ [1. 0. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 1. 0. 0.]
+ [0. 0. 1. 0. 1. 1.]
+ [0. 1. 0. 1. 0. 1.]
+ [1. 0. 1. 0. 1. 0.]
+ [0. 1. 0. 1. 0. 1.]
+ [0. 1. 1. 0. 1. 0.]]
+Result: Agreement
+
+Test 21.10:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 21.11:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0. 0. 0.]
+ [1. 0. 1. 0. 0.]
+ [0. 1. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]]
+Result: Disagreement
+
+Test 21.12:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 1. 0. 0.]
+ [0. 0. 1. 0. 1. 1.]
+ [0. 1. 0. 1. 0. 1.]
+ [1. 0. 1. 0. 1. 0.]
+ [0. 1. 0. 1. 0. 1.]
+ [0. 1. 1. 0. 1. 0.]]
+Result: Disagreement
+
+Test 21.13:
+Graph 1 adjacency matrix:
+[[0. 0. 1. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0. 0. 0.]
+ [1. 0. 1. 0. 0.]
+ [0. 1. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]]
+Result: Disagreement
+
+Test 21.14:
+Graph 1 adjacency matrix:
+[[0. 0. 1. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 1. 0. 0.]
+ [0. 0. 1. 0. 1. 1.]
+ [0. 1. 0. 1. 0. 1.]
+ [1. 0. 1. 0. 1. 0.]
+ [0. 1. 0. 1. 0. 1.]
+ [0. 1. 1. 0. 1. 0.]]
+Result: Disagreement
+
+Test 21.15:
+Graph 1 adjacency matrix:
+[[0. 1. 0. 0. 0.]
+ [1. 0. 1. 0. 0.]
+ [0. 1. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 1. 0. 0.]
+ [0. 0. 1. 0. 1. 1.]
+ [0. 1. 0. 1. 0. 1.]
+ [1. 0. 1. 0. 1. 0.]
+ [0. 1. 0. 1. 0. 1.]
+ [0. 1. 1. 0. 1. 0.]]
+Result: Disagreement
+
+Test 22.1:
+Graph 1 adjacency matrix:
+[[0. 1. 1. 0. 0. 0.]
+ [1. 0. 1. 1. 1. 0.]
+ [1. 1. 0. 0. 0. 1.]
+ [0. 1. 0. 0. 0. 0.]
+ [0. 1. 0. 0. 0. 0.]
+ [0. 0. 1. 0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 1. 0. 0. 0. 1.]
+ [0. 0. 1. 0. 1. 0.]]
+Result: Agreement
+
+Test 22.2:
+Graph 1 adjacency matrix:
+[[0. 1. 1. 0. 0. 0.]
+ [1. 0. 1. 1. 1. 0.]
+ [1. 1. 0. 0. 0. 1.]
+ [0. 1. 0. 0. 0. 0.]
+ [0. 1. 0. 0. 0. 0.]
+ [0. 0. 1. 0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 1. 0. 0.]
+ [0. 0. 1. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 1.]
+ [1. 0. 0. 0. 1. 0.]]
+Result: Agreement
+
+Test 22.3:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 1. 0. 0. 0. 1.]
+ [0. 0. 1. 0. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 1. 0. 0.]
+ [0. 0. 1. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 1.]
+ [1. 0. 0. 0. 1. 0.]]
+Result: Agreement
+
+Test 22.4:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 1. 0. 0.]
+ [0. 0. 1. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 1.]
+ [1. 0. 0. 0. 1. 0.]]
+Result: Agreement
+
+Test 22.5:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0.]]
+Result: Agreement
+
+Test 22.6:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 22.7:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 23.1:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 1. 0. 0.]
+ [0. 0. 0. 0. 1. 1.]
+ [0. 1. 0. 0. 0. 0.]
+ [1. 0. 1. 0. 0. 0.]
+ [0. 0. 1. 0. 0. 0.]]
+Result: Agreement
+
+Test 23.2:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 23.3:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1.]
+ [1. 0. 0. 0.]
+ [1. 0. 0. 1.]
+ [1. 0. 1. 0.]]
+Result: Agreement
+
+Test 23.4:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0. 0. 0.]
+ [1. 0. 1. 0. 0. 1.]
+ [1. 1. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 1. 0. 0.]
+ [0. 1. 1. 0. 0. 0.]]
+Result: Agreement
+
+Test 23.5:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 23.6:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 1. 0. 0.]
+ [0. 0. 0. 0. 1. 1.]
+ [0. 1. 0. 0. 0. 0.]
+ [1. 0. 1. 0. 0. 0.]
+ [0. 0. 1. 0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0. 0. 0.]
+ [1. 0. 1. 0. 0. 1.]
+ [1. 1. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 1. 0. 0.]
+ [0. 1. 1. 0. 0. 0.]]
+Result: Disagreement
+
+Test 23.7:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1.]
+ [1. 0. 0. 0.]
+ [1. 0. 0. 1.]
+ [1. 0. 1. 0.]]
+Result: Agreement
+
+Test 23.8:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0. 0. 0.]
+ [1. 0. 1. 0. 0. 1.]
+ [1. 1. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 1. 0. 0.]
+ [0. 1. 1. 0. 0. 0.]]
+Result: Agreement
+
+Test 23.9:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 23.10:
+Graph 1 adjacency matrix:
+[[0. 1. 1. 1.]
+ [1. 0. 0. 0.]
+ [1. 0. 0. 1.]
+ [1. 0. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0. 0. 0.]
+ [1. 0. 1. 0. 0. 1.]
+ [1. 1. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 1. 0. 0.]
+ [0. 1. 1. 0. 0. 0.]]
+Result: Disagreement
+
+Test 24.1:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 24.2:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 24.3:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1.]
+ [1. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [1. 1. 1. 0.]]
+Result: Agreement
+
+Test 24.4:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0.]]
+Result: Agreement
+
+Test 24.5:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 24.6:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1.]
+ [1. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [1. 1. 1. 0.]]
+Result: Agreement
+
+Test 24.7:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1.]
+ [1. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [1. 1. 1. 0.]]
+Result: Agreement
+
+Test 25.1:
+Graph 1 adjacency matrix:
+[[0. 1. 1. 0. 1.]
+ [1. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 1.]
+ [0. 0. 1. 0. 0.]
+ [1. 1. 1. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 1. 1. 1.]
+ [0. 0. 1. 1. 1. 1.]
+ [1. 1. 0. 1. 1. 1.]
+ [1. 1. 1. 0. 1. 0.]
+ [1. 1. 1. 1. 0. 1.]
+ [1. 1. 1. 0. 1. 0.]]
+Result: Disagreement
+
+Test 25.2:
+Graph 1 adjacency matrix:
+[[0. 1. 1. 0. 1.]
+ [1. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 1.]
+ [0. 0. 1. 0. 0.]
+ [1. 1. 1. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0. 0. 0.]
+ [0. 0. 0. 1. 1. 1.]
+ [1. 0. 0. 0. 1. 1.]
+ [0. 1. 0. 0. 0. 1.]
+ [0. 1. 1. 0. 0. 1.]
+ [0. 1. 1. 1. 1. 0.]]
+Result: Agreement
+
+Test 25.3:
+Graph 1 adjacency matrix:
+[[0. 0. 1. 1. 1. 1.]
+ [0. 0. 1. 1. 1. 1.]
+ [1. 1. 0. 1. 1. 1.]
+ [1. 1. 1. 0. 1. 0.]
+ [1. 1. 1. 1. 0. 1.]
+ [1. 1. 1. 0. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0. 0. 0.]
+ [0. 0. 0. 1. 1. 1.]
+ [1. 0. 0. 0. 1. 1.]
+ [0. 1. 0. 0. 0. 1.]
+ [0. 1. 1. 0. 0. 1.]
+ [0. 1. 1. 1. 1. 0.]]
+Result: Agreement
+
+Test 25.4:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0. 1.]
+ [1. 0. 1. 1.]
+ [0. 1. 0. 1.]
+ [1. 1. 1. 0.]]
+Result: Agreement
+
+Test 25.5:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 25.6:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0. 0. 0.]
+ [0. 0. 0. 1. 1. 1.]
+ [1. 0. 0. 0. 1. 1.]
+ [0. 1. 0. 0. 0. 1.]
+ [0. 1. 1. 0. 0. 1.]
+ [0. 1. 1. 1. 1. 0.]]
+Result: Agreement
+
+Test 25.7:
+Graph 1 adjacency matrix:
+[[0. 1. 0. 1.]
+ [1. 0. 1. 1.]
+ [0. 1. 0. 1.]
+ [1. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0. 0. 0.]
+ [0. 0. 0. 1. 1. 1.]
+ [1. 0. 0. 0. 1. 1.]
+ [0. 1. 0. 0. 0. 1.]
+ [0. 1. 1. 0. 0. 1.]
+ [0. 1. 1. 1. 1. 0.]]
+Result: Agreement
+
+Test 25.8:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0. 0. 0.]
+ [0. 0. 0. 1. 1. 1.]
+ [1. 0. 0. 0. 1. 1.]
+ [0. 1. 0. 0. 0. 1.]
+ [0. 1. 1. 0. 0. 1.]
+ [0. 1. 1. 1. 1. 0.]]
+Result: Agreement
+
+Test 26.1:
+Graph 1 adjacency matrix:
+[[0. 1. 1. 1.]
+ [1. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [1. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 1. 0. 0.]
+ [0. 0. 1. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 1. 0.]]
+Result: Agreement
+
+Test 26.2:
+Graph 1 adjacency matrix:
+[[0. 1. 1. 1.]
+ [1. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [1. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0. 1.]
+ [0. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 1.]
+ [0. 0. 1. 0. 0.]
+ [1. 1. 1. 0. 0.]]
+Result: Agreement
+
+Test 26.3:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0. 1.]
+ [0. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 1.]
+ [0. 0. 1. 0. 0.]
+ [1. 1. 1. 0. 0.]]
+Result: Agreement
+
+Test 26.4:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 27.1:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 0. 1.]
+ [0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 1.]
+ [0. 1. 0. 0. 1.]
+ [1. 0. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0. 0. 0.]
+ [1. 0. 0. 1. 1.]
+ [0. 0. 0. 0. 1.]
+ [0. 1. 0. 0. 0.]
+ [0. 1. 1. 0. 0.]]
+Result: Agreement
+
+Test 27.2:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 0. 1.]
+ [0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 1.]
+ [0. 1. 0. 0. 1.]
+ [1. 0. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 1. 1.]
+ [0. 0. 0. 0. 0. 0.]
+ [1. 0. 1. 0. 0. 1.]
+ [0. 1. 1. 0. 1. 0.]]
+Result: Disagreement
+
+Test 27.3:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 0. 1.]
+ [0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 1.]
+ [0. 1. 0. 0. 1.]
+ [1. 0. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0. 1.]
+ [1. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 1.]
+ [0. 0. 1. 0. 1.]
+ [1. 1. 1. 1. 0.]]
+Result: Disagreement
+
+Test 27.4:
+Graph 1 adjacency matrix:
+[[0. 1. 0. 0. 0.]
+ [1. 0. 0. 1. 1.]
+ [0. 0. 0. 0. 1.]
+ [0. 1. 0. 0. 0.]
+ [0. 1. 1. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 1. 1.]
+ [0. 0. 0. 0. 0. 0.]
+ [1. 0. 1. 0. 0. 1.]
+ [0. 1. 1. 0. 1. 0.]]
+Result: Disagreement
+
+Test 27.5:
+Graph 1 adjacency matrix:
+[[0. 1. 0. 0. 0.]
+ [1. 0. 0. 1. 1.]
+ [0. 0. 0. 0. 1.]
+ [0. 1. 0. 0. 0.]
+ [0. 1. 1. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0. 1.]
+ [1. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 1.]
+ [0. 0. 1. 0. 1.]
+ [1. 1. 1. 1. 0.]]
+Result: Disagreement
+
+Test 27.6:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 1. 1.]
+ [0. 0. 0. 0. 0. 0.]
+ [1. 0. 1. 0. 0. 1.]
+ [0. 1. 1. 0. 1. 0.]]
+Result: Agreement
+
+Test 27.7:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0. 1.]
+ [1. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 1.]
+ [0. 0. 1. 0. 1.]
+ [1. 1. 1. 1. 0.]]
+Result: Agreement
+
+Test 27.8:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0.]
+ [1. 0. 1.]
+ [0. 1. 0.]]
+Result: Agreement
+
+Test 28.1:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 1. 0. 0.]
+ [0. 0. 1. 0. 0. 0.]
+ [0. 1. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0. 1. 1.]
+ [0. 0. 1. 1. 1. 0.]
+ [1. 1. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0. 0.]
+ [1. 1. 1. 0. 0. 0.]
+ [1. 0. 0. 0. 0. 0.]]
+Result: Disagreement
+
+Test 28.2:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 1.]
+ [1. 0. 1. 1. 0.]
+ [1. 1. 0. 1. 1.]
+ [1. 1. 1. 0. 1.]
+ [1. 0. 1. 1. 0.]]
+Result: Agreement
+
+Test 28.3:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0. 1. 1.]
+ [0. 0. 1. 1. 1. 0.]
+ [1. 1. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0. 0.]
+ [1. 1. 1. 0. 0. 0.]
+ [1. 0. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 28.4:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0.]
+ [0. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [0. 1. 1. 0.]]
+Result: Agreement
+
+Test 28.5:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 1. 1.]
+ [0. 0. 1. 0. 0.]
+ [0. 1. 0. 1. 0.]
+ [1. 0. 1. 0. 0.]
+ [1. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 28.6:
+Graph 1 adjacency matrix:
+[[0. 1. 1. 1. 1.]
+ [1. 0. 1. 1. 0.]
+ [1. 1. 0. 1. 1.]
+ [1. 1. 1. 0. 1.]
+ [1. 0. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0. 1. 1.]
+ [0. 0. 1. 1. 1. 0.]
+ [1. 1. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0. 0.]
+ [1. 1. 1. 0. 0. 0.]
+ [1. 0. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 28.7:
+Graph 1 adjacency matrix:
+[[0. 1. 1. 1. 1.]
+ [1. 0. 1. 1. 0.]
+ [1. 1. 0. 1. 1.]
+ [1. 1. 1. 0. 1.]
+ [1. 0. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 1. 1.]
+ [0. 0. 1. 0. 0.]
+ [0. 1. 0. 1. 0.]
+ [1. 0. 1. 0. 0.]
+ [1. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 28.8:
+Graph 1 adjacency matrix:
+[[0. 0. 1. 0.]
+ [0. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [0. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 1. 1.]
+ [0. 0. 1. 0. 0.]
+ [0. 1. 0. 1. 0.]
+ [1. 0. 1. 0. 0.]
+ [1. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 29.1:
+Graph 1 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1.]
+ [0. 0. 1.]
+ [1. 1. 0.]]
+Result: Agreement
+
+Test 29.2:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1.]
+ [0. 0. 1.]
+ [1. 1. 0.]]
+Result: Agreement
+
+Test 29.3:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 30.1:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 0. 1. 1.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 0. 1.]
+ [1. 0. 0. 0. 0. 0.]
+ [1. 0. 1. 1. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0. 1. 1. 1.]
+ [1. 0. 1. 1. 1. 1.]
+ [0. 1. 0. 1. 1. 1.]
+ [1. 1. 1. 0. 1. 1.]
+ [1. 1. 1. 1. 0. 1.]
+ [1. 1. 1. 1. 1. 0.]]
+Result: Disagreement
+
+Test 30.2:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 0. 1. 1.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 0. 1.]
+ [1. 0. 0. 0. 0. 0.]
+ [1. 0. 1. 1. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 1. 0. 1. 0. 0.]]
+Result: Agreement
+
+Test 30.3:
+Graph 1 adjacency matrix:
+[[0. 1. 0. 1. 1. 1.]
+ [1. 0. 1. 1. 1. 1.]
+ [0. 1. 0. 1. 1. 1.]
+ [1. 1. 1. 0. 1. 1.]
+ [1. 1. 1. 1. 0. 1.]
+ [1. 1. 1. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 1. 0. 1. 0. 0.]]
+Result: Agreement
+
+Test 30.4:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 1. 0.]
+ [0. 0. 1. 0. 0.]
+ [0. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 30.5:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 31.1:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 1. 1. 1.]
+ [0. 0. 1. 1. 0. 1.]
+ [0. 1. 0. 1. 1. 1.]
+ [1. 1. 1. 0. 1. 1.]
+ [1. 0. 1. 1. 0. 0.]
+ [1. 1. 1. 1. 0. 0.]]
+Result: Agreement
+
+Test 31.2:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 31.3:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0.]
+ [0. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [0. 1. 1. 0.]]
+Result: Agreement
+
+Test 31.4:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 31.5:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 1. 1. 1.]
+ [0. 0. 1. 1. 0. 1.]
+ [0. 1. 0. 1. 1. 1.]
+ [1. 1. 1. 0. 1. 1.]
+ [1. 0. 1. 1. 0. 0.]
+ [1. 1. 1. 1. 0. 0.]]
+Result: Agreement
+
+Test 31.6:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 31.7:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0.]
+ [0. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [0. 1. 1. 0.]]
+Result: Agreement
+
+Test 31.8:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 31.9:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0.]
+ [0. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [0. 1. 1. 0.]]
+Result: Agreement
+
+Test 31.10:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 32.1:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 1. 1.]
+ [0. 0. 1. 1. 0.]
+ [1. 1. 0. 1. 1.]
+ [1. 1. 1. 0. 1.]
+ [1. 0. 1. 1. 0.]]
+Result: Agreement
+
+Test 32.2:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0.]
+ [0. 0. 0. 1.]
+ [1. 0. 0. 1.]
+ [0. 1. 1. 0.]]
+Result: Agreement
+
+Test 32.3:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0.]
+ [1. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [0. 1. 1. 0.]]
+Result: Agreement
+
+Test 32.4:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 1. 0. 0.]
+ [0. 0. 0. 1. 1. 0.]
+ [1. 0. 0. 0. 0. 0.]
+ [1. 1. 0. 0. 1. 0.]
+ [0. 1. 0. 1. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 32.5:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 32.6:
+Graph 1 adjacency matrix:
+[[0. 0. 1. 1. 1.]
+ [0. 0. 1. 1. 0.]
+ [1. 1. 0. 1. 1.]
+ [1. 1. 1. 0. 1.]
+ [1. 0. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 1. 0. 0.]
+ [0. 0. 0. 1. 1. 0.]
+ [1. 0. 0. 0. 0. 0.]
+ [1. 1. 0. 0. 1. 0.]
+ [0. 1. 0. 1. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 32.7:
+Graph 1 adjacency matrix:
+[[0. 0. 1. 0.]
+ [0. 0. 0. 1.]
+ [1. 0. 0. 1.]
+ [0. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0.]
+ [1. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [0. 1. 1. 0.]]
+Result: Disagreement
+
+Test 32.8:
+Graph 1 adjacency matrix:
+[[0. 0. 1. 0.]
+ [0. 0. 0. 1.]
+ [1. 0. 0. 1.]
+ [0. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 1. 0. 0.]
+ [0. 0. 0. 1. 1. 0.]
+ [1. 0. 0. 0. 0. 0.]
+ [1. 1. 0. 0. 1. 0.]
+ [0. 1. 0. 1. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 32.9:
+Graph 1 adjacency matrix:
+[[0. 1. 1. 0.]
+ [1. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [0. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 1. 0. 0.]
+ [0. 0. 0. 1. 1. 0.]
+ [1. 0. 0. 0. 0. 0.]
+ [1. 1. 0. 0. 1. 0.]
+ [0. 1. 0. 1. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 33.1:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0. 1.]
+ [1. 0. 1. 1.]
+ [0. 1. 0. 1.]
+ [1. 1. 1. 0.]]
+Result: Agreement
+
+Test 33.2:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 33.3:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1.]
+ [0. 0. 0.]
+ [1. 0. 0.]]
+Result: Agreement
+
+Test 33.4:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 33.5:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0.]
+ [1. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [0. 1. 1. 0.]]
+Result: Agreement
+
+Test 33.6:
+Graph 1 adjacency matrix:
+[[0. 1. 0. 1.]
+ [1. 0. 1. 1.]
+ [0. 1. 0. 1.]
+ [1. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0.]
+ [1. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [0. 1. 1. 0.]]
+Result: Agreement
+
+Test 33.7:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1.]
+ [0. 0. 0.]
+ [1. 0. 0.]]
+Result: Agreement
+
+Test 33.8:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 33.9:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0.]
+ [1. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [0. 1. 1. 0.]]
+Result: Agreement
+
+Test 33.10:
+Graph 1 adjacency matrix:
+[[0. 0. 1.]
+ [0. 0. 0.]
+ [1. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0.]
+ [1. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [0. 1. 1. 0.]]
+Result: Disagreement
+
+Test 33.11:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0.]
+ [1. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [0. 1. 1. 0.]]
+Result: Agreement
+
+Test 34.1:
+Graph 1 adjacency matrix:
+[[0. 1. 0. 0.]
+ [1. 0. 0. 0.]
+ [0. 0. 0. 0.]
+ [0. 0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0.]
+ [0. 0. 1. 0.]
+ [1. 1. 0. 0.]
+ [0. 0. 0. 0.]]
+Result: Disagreement
+
+Test 34.2:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0.]
+ [0. 0. 1. 0.]
+ [1. 1. 0. 0.]
+ [0. 0. 0. 0.]]
+Result: Agreement
+
+Test 34.3:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Result: Agreement
+
+Test 34.4:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0.]
+ [0. 0. 1. 0.]
+ [1. 1. 0. 0.]
+ [0. 0. 0. 0.]]
+Result: Agreement
+
+Test 34.5:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Result: Agreement
+
+Test 34.6:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0.]]
+Result: Agreement
+
+Test 35.1:
+Graph 1 adjacency matrix:
+[[0. 1. 0. 0. 1. 1.]
+ [1. 0. 0. 1. 0. 0.]
+ [0. 0. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0. 0.]
+ [1. 0. 1. 0. 0. 0.]
+ [1. 0. 0. 0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 1. 1. 1.]
+ [0. 0. 1. 0. 0. 0.]
+ [0. 0. 1. 0. 0. 0.]
+ [0. 0. 1. 0. 0. 0.]]
+Result: Agreement
+
+Test 35.2:
+Graph 1 adjacency matrix:
+[[0. 1. 0. 0. 1. 1.]
+ [1. 0. 0. 1. 0. 0.]
+ [0. 0. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0. 0.]
+ [1. 0. 1. 0. 0. 0.]
+ [1. 0. 0. 0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0. 1. 1.]
+ [1. 0. 1. 1. 0. 1.]
+ [1. 1. 0. 1. 0. 1.]
+ [0. 1. 1. 0. 0. 1.]
+ [1. 0. 0. 0. 0. 0.]
+ [1. 1. 1. 1. 0. 0.]]
+Result: Disagreement
+
+Test 35.3:
+Graph 1 adjacency matrix:
+[[0. 1. 0. 0. 1. 1.]
+ [1. 0. 0. 1. 0. 0.]
+ [0. 0. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0. 0.]
+ [1. 0. 1. 0. 0. 0.]
+ [1. 0. 0. 0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0. 1. 1.]
+ [1. 0. 1. 0. 1. 1.]
+ [1. 1. 0. 1. 1. 1.]
+ [0. 0. 1. 0. 1. 0.]
+ [1. 1. 1. 1. 0. 1.]
+ [1. 1. 1. 0. 1. 0.]]
+Result: Disagreement
+
+Test 35.4:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 1. 1. 1.]
+ [0. 0. 1. 0. 0. 0.]
+ [0. 0. 1. 0. 0. 0.]
+ [0. 0. 1. 0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0. 1. 1.]
+ [1. 0. 1. 1. 0. 1.]
+ [1. 1. 0. 1. 0. 1.]
+ [0. 1. 1. 0. 0. 1.]
+ [1. 0. 0. 0. 0. 0.]
+ [1. 1. 1. 1. 0. 0.]]
+Result: Disagreement
+
+Test 35.5:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 1. 1. 1.]
+ [0. 0. 1. 0. 0. 0.]
+ [0. 0. 1. 0. 0. 0.]
+ [0. 0. 1. 0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0. 1. 1.]
+ [1. 0. 1. 0. 1. 1.]
+ [1. 1. 0. 1. 1. 1.]
+ [0. 0. 1. 0. 1. 0.]
+ [1. 1. 1. 1. 0. 1.]
+ [1. 1. 1. 0. 1. 0.]]
+Result: Disagreement
+
+Test 35.6:
+Graph 1 adjacency matrix:
+[[0. 1. 1. 0. 1. 1.]
+ [1. 0. 1. 1. 0. 1.]
+ [1. 1. 0. 1. 0. 1.]
+ [0. 1. 1. 0. 0. 1.]
+ [1. 0. 0. 0. 0. 0.]
+ [1. 1. 1. 1. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0. 1. 1.]
+ [1. 0. 1. 0. 1. 1.]
+ [1. 1. 0. 1. 1. 1.]
+ [0. 0. 1. 0. 1. 0.]
+ [1. 1. 1. 1. 0. 1.]
+ [1. 1. 1. 0. 1. 0.]]
+Result: Disagreement
+
+Test 35.7:
+Graph 1 adjacency matrix:
+[[0. 1. 0.]
+ [1. 0. 1.]
+ [0. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0. 1. 1.]
+ [1. 0. 1. 0. 1. 1.]
+ [1. 1. 0. 1. 1. 1.]
+ [0. 0. 1. 0. 1. 0.]
+ [1. 1. 1. 1. 0. 1.]
+ [1. 1. 1. 0. 1. 0.]]
+Result: Agreement
+
+Test 35.8:
+Graph 1 adjacency matrix:
+[[0. 1. 0.]
+ [1. 0. 1.]
+ [0. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Result: Disagreement
+
+Test 36.1:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 1. 0. 1.]
+ [0. 0. 0. 0. 0. 1.]
+ [1. 0. 0. 0. 0. 1.]
+ [1. 0. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 0. 1.]
+ [1. 1. 1. 1. 1. 0.]]
+Result: Agreement
+
+Test 36.2:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Result: Agreement
+
+Test 36.3:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0.]
+ [1. 0. 1.]
+ [0. 1. 0.]]
+Result: Agreement
+
+Test 36.4:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 0.]
+ [0. 0. 1. 1. 1.]
+ [0. 1. 0. 1. 1.]
+ [0. 1. 1. 0. 1.]
+ [0. 1. 1. 1. 0.]]
+Result: Agreement
+
+Test 36.5:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 36.6:
+Graph 1 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0.]
+ [1. 0. 1.]
+ [0. 1. 0.]]
+Result: Agreement
+
+Test 36.7:
+Graph 1 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 0.]
+ [0. 0. 1. 1. 1.]
+ [0. 1. 0. 1. 1.]
+ [0. 1. 1. 0. 1.]
+ [0. 1. 1. 1. 0.]]
+Result: Agreement
+
+Test 36.8:
+Graph 1 adjacency matrix:
+[[0. 1. 0.]
+ [1. 0. 1.]
+ [0. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 0.]
+ [0. 0. 1. 1. 1.]
+ [0. 1. 0. 1. 1.]
+ [0. 1. 1. 0. 1.]
+ [0. 1. 1. 1. 0.]]
+Result: Disagreement
+
+Test 37.1:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 37.2:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1.]
+ [0. 0. 1.]
+ [1. 1. 0.]]
+Result: Agreement
+
+Test 37.3:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 37.4:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Result: Agreement
+
+Test 37.5:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1.]
+ [0. 0. 1.]
+ [1. 1. 0.]]
+Result: Agreement
+
+Test 37.6:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 37.7:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Result: Agreement
+
+Test 37.8:
+Graph 1 adjacency matrix:
+[[0. 0. 1.]
+ [0. 0. 1.]
+ [1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Result: Disagreement
+
+Test 37.9:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Result: Agreement
+
+Test 38.1:
+Graph 1 adjacency matrix:
+[[0. 1. 1. 1. 1.]
+ [1. 0. 1. 1. 1.]
+ [1. 1. 0. 1. 1.]
+ [1. 1. 1. 0. 1.]
+ [1. 1. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 1. 1. 1.]
+ [0. 0. 1. 1. 1. 0.]
+ [1. 1. 0. 1. 0. 0.]
+ [1. 1. 1. 0. 1. 0.]
+ [1. 1. 0. 1. 0. 0.]
+ [1. 0. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 38.2:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Result: Agreement
+
+Test 38.3:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 1. 1. 1.]
+ [0. 0. 1. 1. 1. 0.]
+ [1. 1. 0. 1. 0. 0.]
+ [1. 1. 1. 0. 1. 0.]
+ [1. 1. 0. 1. 0. 0.]
+ [1. 0. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 38.4:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 38.5:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 0.]
+ [1. 0. 0.]]
+Result: Agreement
+
+Test 38.6:
+Graph 1 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 1. 1. 1.]
+ [0. 0. 1. 1. 1. 0.]
+ [1. 1. 0. 1. 0. 0.]
+ [1. 1. 1. 0. 1. 0.]
+ [1. 1. 0. 1. 0. 0.]
+ [1. 0. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 38.7:
+Graph 1 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 0.]
+ [1. 0. 0.]]
+Result: Agreement
+
+Test 38.8:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 0.]
+ [1. 0. 0.]]
+Result: Agreement
+
+Test 39.1:
+Graph 1 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 1. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 1. 0. 0.]
+ [1. 0. 1. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 39.2:
+Graph 1 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Result: Agreement
+
+Test 39.3:
+Graph 1 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0.]
+ [0. 0. 0. 0.]
+ [1. 0. 0. 0.]
+ [0. 0. 0. 0.]]
+Result: Agreement
+
+Test 39.4:
+Graph 1 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0. 1. 1.]
+ [0. 0. 1. 1. 1. 1.]
+ [1. 1. 0. 1. 1. 1.]
+ [0. 1. 1. 0. 1. 1.]
+ [1. 1. 1. 1. 0. 0.]
+ [1. 1. 1. 1. 0. 0.]]
+Result: Agreement
+
+Test 39.5:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 1. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 1. 0. 0.]
+ [1. 0. 1. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0. 1. 1.]
+ [0. 0. 1. 1. 1. 1.]
+ [1. 1. 0. 1. 1. 1.]
+ [0. 1. 1. 0. 1. 1.]
+ [1. 1. 1. 1. 0. 0.]
+ [1. 1. 1. 1. 0. 0.]]
+Result: Disagreement
+
+Test 39.6:
+Graph 1 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0.]
+ [0. 0. 0. 0.]
+ [1. 0. 0. 0.]
+ [0. 0. 0. 0.]]
+Result: Agreement
+
+Test 39.7:
+Graph 1 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0. 1. 1.]
+ [0. 0. 1. 1. 1. 1.]
+ [1. 1. 0. 1. 1. 1.]
+ [0. 1. 1. 0. 1. 1.]
+ [1. 1. 1. 1. 0. 0.]
+ [1. 1. 1. 1. 0. 0.]]
+Result: Agreement
+
+Test 39.8:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0.]
+ [0. 0. 0. 0.]
+ [1. 0. 0. 0.]
+ [0. 0. 0. 0.]]
+Result: Agreement
+
+Test 39.9:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0. 1. 1.]
+ [0. 0. 1. 1. 1. 1.]
+ [1. 1. 0. 1. 1. 1.]
+ [0. 1. 1. 0. 1. 1.]
+ [1. 1. 1. 1. 0. 0.]
+ [1. 1. 1. 1. 0. 0.]]
+Result: Agreement
+
+Test 39.10:
+Graph 1 adjacency matrix:
+[[0. 0. 1. 0.]
+ [0. 0. 0. 0.]
+ [1. 0. 0. 0.]
+ [0. 0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0. 1. 1.]
+ [0. 0. 1. 1. 1. 1.]
+ [1. 1. 0. 1. 1. 1.]
+ [0. 1. 1. 0. 1. 1.]
+ [1. 1. 1. 1. 0. 0.]
+ [1. 1. 1. 1. 0. 0.]]
+Result: Disagreement
+
+Test 40.1:
+Graph 1 adjacency matrix:
+[[0. 0. 1. 1. 1. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 1. 1.]
+ [1. 0. 0. 0. 1. 0.]
+ [1. 0. 1. 1. 0. 1.]
+ [0. 0. 1. 0. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 1. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 40.2:
+Graph 1 adjacency matrix:
+[[0. 0. 1. 1. 1. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 1. 1.]
+ [1. 0. 0. 0. 1. 0.]
+ [1. 0. 1. 1. 0. 1.]
+ [0. 0. 1. 0. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 1. 0.]
+ [1. 0. 1. 1. 1. 1.]
+ [1. 1. 0. 1. 1. 1.]
+ [1. 1. 1. 0. 1. 1.]
+ [1. 1. 1. 1. 0. 1.]
+ [0. 1. 1. 1. 1. 0.]]
+Result: Disagreement
+
+Test 40.3:
+Graph 1 adjacency matrix:
+[[0. 0. 1. 1. 1. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 1. 1.]
+ [1. 0. 0. 0. 1. 0.]
+ [1. 0. 1. 1. 0. 1.]
+ [0. 0. 1. 0. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 1. 1.]
+ [1. 0. 1. 1. 1. 1.]
+ [1. 1. 0. 1. 0. 1.]
+ [1. 1. 1. 0. 1. 1.]
+ [1. 1. 0. 1. 0. 1.]
+ [1. 1. 1. 1. 1. 0.]]
+Result: Disagreement
+
+Test 40.4:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0.]]
+Result: Agreement
+
+Test 40.5:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 1. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 40.6:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 1. 0.]
+ [1. 0. 1. 1. 1. 1.]
+ [1. 1. 0. 1. 1. 1.]
+ [1. 1. 1. 0. 1. 1.]
+ [1. 1. 1. 1. 0. 1.]
+ [0. 1. 1. 1. 1. 0.]]
+Result: Agreement
+
+Test 40.7:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 1. 1.]
+ [1. 0. 1. 1. 1. 1.]
+ [1. 1. 0. 1. 0. 1.]
+ [1. 1. 1. 0. 1. 1.]
+ [1. 1. 0. 1. 0. 1.]
+ [1. 1. 1. 1. 1. 0.]]
+Result: Agreement
+
+Test 40.8:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 1. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 40.9:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 1. 0.]
+ [1. 0. 1. 1. 1. 1.]
+ [1. 1. 0. 1. 1. 1.]
+ [1. 1. 1. 0. 1. 1.]
+ [1. 1. 1. 1. 0. 1.]
+ [0. 1. 1. 1. 1. 0.]]
+Result: Agreement
+
+Test 40.10:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 1. 1.]
+ [1. 0. 1. 1. 1. 1.]
+ [1. 1. 0. 1. 0. 1.]
+ [1. 1. 1. 0. 1. 1.]
+ [1. 1. 0. 1. 0. 1.]
+ [1. 1. 1. 1. 1. 0.]]
+Result: Agreement
+
+Test 40.11:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 1. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 1. 0.]
+ [1. 0. 1. 1. 1. 1.]
+ [1. 1. 0. 1. 1. 1.]
+ [1. 1. 1. 0. 1. 1.]
+ [1. 1. 1. 1. 0. 1.]
+ [0. 1. 1. 1. 1. 0.]]
+Result: Disagreement
+
+Test 40.12:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 1. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 1. 1.]
+ [1. 0. 1. 1. 1. 1.]
+ [1. 1. 0. 1. 0. 1.]
+ [1. 1. 1. 0. 1. 1.]
+ [1. 1. 0. 1. 0. 1.]
+ [1. 1. 1. 1. 1. 0.]]
+Result: Disagreement
+
+Test 40.13:
+Graph 1 adjacency matrix:
+[[0. 1. 1. 1. 1. 0.]
+ [1. 0. 1. 1. 1. 1.]
+ [1. 1. 0. 1. 1. 1.]
+ [1. 1. 1. 0. 1. 1.]
+ [1. 1. 1. 1. 0. 1.]
+ [0. 1. 1. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 1. 1.]
+ [1. 0. 1. 1. 1. 1.]
+ [1. 1. 0. 1. 0. 1.]
+ [1. 1. 1. 0. 1. 1.]
+ [1. 1. 0. 1. 0. 1.]
+ [1. 1. 1. 1. 1. 0.]]
+Result: Agreement
+
+Test 41.1:
+Graph 1 adjacency matrix:
+[[0. 1. 1. 1. 1. 1.]
+ [1. 0. 1. 1. 1. 1.]
+ [1. 1. 0. 1. 1. 1.]
+ [1. 1. 1. 0. 1. 1.]
+ [1. 1. 1. 1. 0. 1.]
+ [1. 1. 1. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 1. 0. 0.]
+ [0. 0. 1. 0. 0. 0.]
+ [1. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 41.2:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 1. 0. 0.]
+ [0. 0. 1. 0. 0. 0.]
+ [1. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 41.3:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 1.]
+ [0. 0. 1. 0.]
+ [1. 1. 0. 0.]
+ [1. 0. 0. 0.]]
+Result: Agreement
+
+Test 41.4:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0. 1.]
+ [0. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 1.]
+ [0. 0. 1. 0. 0.]
+ [1. 1. 1. 0. 0.]]
+Result: Agreement
+
+Test 41.5:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 0.]
+ [1. 0. 0.]]
+Result: Agreement
+
+Test 41.6:
+Graph 1 adjacency matrix:
+[[0. 0. 1. 1.]
+ [0. 0. 1. 0.]
+ [1. 1. 0. 0.]
+ [1. 0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 0. 1.]
+ [0. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 1.]
+ [0. 0. 1. 0. 0.]
+ [1. 1. 1. 0. 0.]]
+Result: Agreement
+
+Test 42.1:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Result: Agreement
+
+Test 42.2:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Result: Agreement
+
+Test 42.3:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0. 1. 0.]
+ [1. 0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 42.4:
+Graph 1 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Result: Agreement
+
+Test 42.5:
+Graph 1 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0. 1. 0.]
+ [1. 0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 42.6:
+Graph 1 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0. 1. 0.]
+ [1. 0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 42.7:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0. 1. 0.]
+ [1. 0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 42.8:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0.]]
+Result: Agreement
+
+Test 43.1:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 1.]
+ [1. 0. 0. 0. 0.]
+ [0. 0. 1. 0. 0.]]
+Result: Agreement
+
+Test 43.2:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 43.3:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 1.]
+ [1. 0. 1. 1. 1.]
+ [1. 1. 0. 1. 0.]
+ [1. 1. 1. 0. 1.]
+ [1. 1. 0. 1. 0.]]
+Result: Agreement
+
+Test 43.4:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0.]
+ [1. 0. 0. 1.]
+ [1. 0. 0. 1.]
+ [0. 1. 1. 0.]]
+Result: Agreement
+
+Test 43.5:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 1.]
+ [0. 0. 1. 0. 0.]
+ [0. 1. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 43.6:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 1.]
+ [1. 0. 0. 0. 0.]
+ [0. 0. 1. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 1.]
+ [1. 0. 1. 1. 1.]
+ [1. 1. 0. 1. 0.]
+ [1. 1. 1. 0. 1.]
+ [1. 1. 0. 1. 0.]]
+Result: Disagreement
+
+Test 43.7:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 1.]
+ [1. 0. 0. 0. 0.]
+ [0. 0. 1. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 1.]
+ [0. 0. 1. 0. 0.]
+ [0. 1. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 43.8:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 1.]
+ [1. 0. 1. 1. 1.]
+ [1. 1. 0. 1. 0.]
+ [1. 1. 1. 0. 1.]
+ [1. 1. 0. 1. 0.]]
+Result: Agreement
+
+Test 43.9:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0.]
+ [1. 0. 0. 1.]
+ [1. 0. 0. 1.]
+ [0. 1. 1. 0.]]
+Result: Agreement
+
+Test 43.10:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 1.]
+ [0. 0. 1. 0. 0.]
+ [0. 1. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 43.11:
+Graph 1 adjacency matrix:
+[[0. 1. 1. 1. 1.]
+ [1. 0. 1. 1. 1.]
+ [1. 1. 0. 1. 0.]
+ [1. 1. 1. 0. 1.]
+ [1. 1. 0. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 1.]
+ [0. 0. 1. 0. 0.]
+ [0. 1. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 43.12:
+Graph 1 adjacency matrix:
+[[0. 1. 1. 0.]
+ [1. 0. 0. 1.]
+ [1. 0. 0. 1.]
+ [0. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 1.]
+ [0. 0. 1. 0. 0.]
+ [0. 1. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 44.1:
+Graph 1 adjacency matrix:
+[[0. 1. 0. 1.]
+ [1. 0. 1. 1.]
+ [0. 1. 0. 1.]
+ [1. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0. 0.]
+ [1. 0. 0. 0.]
+ [0. 0. 0. 0.]
+ [0. 0. 0. 0.]]
+Result: Agreement
+
+Test 44.2:
+Graph 1 adjacency matrix:
+[[0. 1. 0. 1.]
+ [1. 0. 1. 1.]
+ [0. 1. 0. 1.]
+ [1. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 1. 0. 0.]
+ [0. 0. 1. 0. 0. 0.]
+ [1. 1. 0. 1. 1. 0.]
+ [1. 0. 1. 0. 1. 0.]
+ [0. 0. 1. 1. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 44.3:
+Graph 1 adjacency matrix:
+[[0. 1. 0. 1.]
+ [1. 0. 1. 1.]
+ [0. 1. 0. 1.]
+ [1. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1.]
+ [1. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [1. 1. 1. 0.]]
+Result: Disagreement
+
+Test 44.4:
+Graph 1 adjacency matrix:
+[[0. 1. 0. 0.]
+ [1. 0. 0. 0.]
+ [0. 0. 0. 0.]
+ [0. 0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 1. 0. 0.]
+ [0. 0. 1. 0. 0. 0.]
+ [1. 1. 0. 1. 1. 0.]
+ [1. 0. 1. 0. 1. 0.]
+ [0. 0. 1. 1. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 44.5:
+Graph 1 adjacency matrix:
+[[0. 1. 0. 0.]
+ [1. 0. 0. 0.]
+ [0. 0. 0. 0.]
+ [0. 0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1.]
+ [1. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [1. 1. 1. 0.]]
+Result: Disagreement
+
+Test 44.6:
+Graph 1 adjacency matrix:
+[[0. 0. 1.]
+ [0. 0. 1.]
+ [1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1.]
+ [1. 0. 1. 1.]
+ [1. 1. 0. 1.]
+ [1. 1. 1. 0.]]
+Result: Disagreement
+
+Test 45.1:
+Graph 1 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 1. 1.]
+ [1. 0. 1. 1. 1. 1.]
+ [1. 1. 0. 0. 1. 1.]
+ [1. 1. 0. 0. 1. 0.]
+ [1. 1. 1. 1. 0. 1.]
+ [1. 1. 1. 0. 1. 0.]]
+Result: Agreement
+
+Test 45.2:
+Graph 1 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0.]
+ [0. 0. 1.]
+ [0. 1. 0.]]
+Result: Agreement
+
+Test 45.3:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0.]
+ [0. 0. 1.]
+ [0. 1. 0.]]
+Result: Agreement
+
+Test 45.4:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0.]]
+Result: Agreement
+
+Test 46.1:
+Graph 1 adjacency matrix:
+[[0. 1. 1. 1. 1.]
+ [1. 0. 1. 1. 1.]
+ [1. 1. 0. 1. 1.]
+ [1. 1. 1. 0. 1.]
+ [1. 1. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 1. 1. 1.]
+ [0. 0. 1. 1. 1.]
+ [1. 1. 0. 1. 0.]
+ [1. 1. 1. 0. 0.]
+ [1. 1. 0. 0. 0.]]
+Result: Agreement
+
+Test 46.2:
+Graph 1 adjacency matrix:
+[[0. 1. 1. 1. 1.]
+ [1. 0. 1. 1. 1.]
+ [1. 1. 0. 1. 1.]
+ [1. 1. 1. 0. 1.]
+ [1. 1. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0. 0. 0.]
+ [1. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [0. 1. 0. 0. 0.]]
+Result: Agreement
+
+Test 46.3:
+Graph 1 adjacency matrix:
+[[0. 0. 1. 1. 1.]
+ [0. 0. 1. 1. 1.]
+ [1. 1. 0. 1. 0.]
+ [1. 1. 1. 0. 0.]
+ [1. 1. 0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0. 0. 0.]
+ [1. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [0. 1. 0. 0. 0.]]
+Result: Agreement
+
+Test 46.4:
+Graph 1 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0. 0. 0.]
+ [1. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [0. 1. 0. 0. 0.]]
+Result: Agreement
+
+Test 46.5:
+Graph 1 adjacency matrix:
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0.]
+ [1. 0. 1.]
+ [0. 1. 0.]]
+Result: Agreement
+
+Test 46.6:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0. 0. 0.]
+ [1. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [0. 1. 0. 0. 0.]]
+Result: Agreement
+
+Test 46.7:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0.]
+ [1. 0. 1.]
+ [0. 1. 0.]]
+Result: Agreement
+
+Test 47.1:
+Graph 1 adjacency matrix:
+[[0. 0. 1. 0.]
+ [0. 0. 0. 0.]
+ [1. 0. 0. 0.]
+ [0. 0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 1. 1.]
+ [1. 0. 1. 1. 1. 1.]
+ [1. 1. 0. 1. 0. 1.]
+ [1. 1. 1. 0. 0. 0.]
+ [1. 1. 0. 0. 0. 1.]
+ [1. 1. 1. 0. 1. 0.]]
+Result: Disagreement
+
+Test 47.2:
+Graph 1 adjacency matrix:
+[[0. 0. 1. 0.]
+ [0. 0. 0. 0.]
+ [1. 0. 0. 0.]
+ [0. 0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 1.]
+ [0. 0. 0. 0.]
+ [0. 0. 0. 0.]
+ [1. 0. 0. 0.]]
+Result: Agreement
+
+Test 47.3:
+Graph 1 adjacency matrix:
+[[0. 0. 1. 0.]
+ [0. 0. 0. 0.]
+ [1. 0. 0. 0.]
+ [0. 0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0.]
+ [1. 0. 0. 0.]
+ [1. 0. 0. 0.]
+ [0. 0. 0. 0.]]
+Result: Disagreement
+
+Test 47.4:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 1. 1. 1.]
+ [1. 0. 1. 1. 1. 1.]
+ [1. 1. 0. 1. 0. 1.]
+ [1. 1. 1. 0. 0. 0.]
+ [1. 1. 0. 0. 0. 1.]
+ [1. 1. 1. 0. 1. 0.]]
+Result: Agreement
+
+Test 47.5:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 1.]
+ [0. 0. 0. 0.]
+ [0. 0. 0. 0.]
+ [1. 0. 0. 0.]]
+Result: Agreement
+
+Test 47.6:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Result: Agreement
+
+Test 47.7:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0.]
+ [1. 0. 0. 0.]
+ [1. 0. 0. 0.]
+ [0. 0. 0. 0.]]
+Result: Agreement
+
+Test 47.8:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 1.]
+ [0. 0. 0. 0.]
+ [0. 0. 0. 0.]
+ [1. 0. 0. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0.]
+ [1. 0. 0. 0.]
+ [1. 0. 0. 0.]
+ [0. 0. 0. 0.]]
+Result: Disagreement
+
+Test 47.9:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0.]
+ [1. 0. 0. 0.]
+ [1. 0. 0. 0.]
+ [0. 0. 0. 0.]]
+Result: Agreement
+
+Test 48.1:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0.]]
+Result: Agreement
+
+Test 48.2:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0. 1.]
+ [1. 0. 0. 1. 1.]
+ [1. 0. 0. 1. 1.]
+ [0. 1. 1. 0. 1.]
+ [1. 1. 1. 1. 0.]]
+Result: Agreement
+
+Test 48.3:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0. 1. 1. 1.]
+ [1. 0. 0. 1. 1. 1.]
+ [0. 0. 0. 1. 1. 1.]
+ [1. 1. 1. 0. 1. 0.]
+ [1. 1. 1. 1. 0. 1.]
+ [1. 1. 1. 0. 1. 0.]]
+Result: Agreement
+
+Test 48.4:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0.]]
+Result: Agreement
+
+Test 48.5:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0. 1.]
+ [1. 0. 1. 1.]
+ [0. 1. 0. 1.]
+ [1. 1. 1. 0.]]
+Result: Agreement
+
+Test 48.6:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0. 1.]
+ [1. 0. 0. 1. 1.]
+ [1. 0. 0. 1. 1.]
+ [0. 1. 1. 0. 1.]
+ [1. 1. 1. 1. 0.]]
+Result: Agreement
+
+Test 48.7:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0. 1. 1. 1.]
+ [1. 0. 0. 1. 1. 1.]
+ [0. 0. 0. 1. 1. 1.]
+ [1. 1. 1. 0. 1. 0.]
+ [1. 1. 1. 1. 0. 1.]
+ [1. 1. 1. 0. 1. 0.]]
+Result: Agreement
+
+Test 48.8:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0.]]
+Result: Agreement
+
+Test 48.9:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0. 1.]
+ [1. 0. 1. 1.]
+ [0. 1. 0. 1.]
+ [1. 1. 1. 0.]]
+Result: Agreement
+
+Test 48.10:
+Graph 1 adjacency matrix:
+[[0. 1. 1. 0. 1.]
+ [1. 0. 0. 1. 1.]
+ [1. 0. 0. 1. 1.]
+ [0. 1. 1. 0. 1.]
+ [1. 1. 1. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0. 1. 1. 1.]
+ [1. 0. 0. 1. 1. 1.]
+ [0. 0. 0. 1. 1. 1.]
+ [1. 1. 1. 0. 1. 0.]
+ [1. 1. 1. 1. 0. 1.]
+ [1. 1. 1. 0. 1. 0.]]
+Result: Agreement
+
+Test 48.11:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0. 1.]
+ [1. 0. 1. 1.]
+ [0. 1. 0. 1.]
+ [1. 1. 1. 0.]]
+Result: Agreement
+
+Test 49.1:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 0.]
+ [1. 0. 1.]
+ [0. 1. 0.]]
+Result: Agreement
+
+Test 49.2:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 0.]
+ [0. 0. 1. 0. 0.]
+ [0. 1. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 49.3:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 1.]
+ [0. 0. 0. 0.]
+ [0. 0. 0. 0.]
+ [1. 0. 0. 0.]]
+Result: Agreement
+
+Test 49.4:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0.]]
+Result: Agreement
+
+Test 49.5:
+Graph 1 adjacency matrix:
+[[0. 1. 0.]
+ [1. 0. 1.]
+ [0. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0. 0.]
+ [0. 0. 1. 0. 0.]
+ [0. 1. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]]
+Result: Agreement
+
+Test 49.6:
+Graph 1 adjacency matrix:
+[[0. 1. 0.]
+ [1. 0. 1.]
+ [0. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 1.]
+ [0. 0. 0. 0.]
+ [0. 0. 0. 0.]
+ [1. 0. 0. 0.]]
+Result: Agreement
+
+Test 50.1:
+Graph 1 adjacency matrix:
+[[0. 1. 0. 0. 1. 1.]
+ [1. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 1. 0. 1.]
+ [0. 0. 1. 0. 0. 0.]
+ [1. 1. 0. 0. 0. 1.]
+ [1. 0. 1. 0. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0. 1. 0.]
+ [1. 0. 0. 0. 0. 1.]
+ [1. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 1. 0.]
+ [1. 0. 1. 1. 0. 1.]
+ [0. 1. 0. 0. 1. 0.]]
+Result: Agreement
+
+Test 50.2:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0.]
+ [0. 0. 0. 0.]
+ [0. 0. 0. 1.]
+ [0. 0. 1. 0.]]
+Result: Agreement
+
+Test 50.3:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0.]
+ [0. 0. 1.]
+ [0. 1. 0.]]
+Result: Agreement
+
+Test 50.4:
+Graph 1 adjacency matrix:
+[[0. 1.]
+ [1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0. 1. 0.]
+ [1. 0. 0. 0. 0. 1.]
+ [1. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 1. 0.]
+ [1. 0. 1. 1. 0. 1.]
+ [0. 1. 0. 0. 1. 0.]]
+Result: Agreement
+
+Test 50.5:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0. 0.]
+ [0. 0. 0. 0.]
+ [0. 0. 0. 1.]
+ [0. 0. 1. 0.]]
+Result: Agreement
+
+Test 50.6:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 0. 0.]
+ [0. 0. 1.]
+ [0. 1. 0.]]
+Result: Agreement
+
+Test 50.7:
+Graph 1 adjacency matrix:
+[[0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0. 1. 0.]
+ [1. 0. 0. 0. 0. 1.]
+ [1. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 1. 0.]
+ [1. 0. 1. 1. 0. 1.]
+ [0. 1. 0. 0. 1. 0.]]
+Result: Agreement
+
+Test 50.8:
+Graph 1 adjacency matrix:
+[[0. 0. 0. 0.]
+ [0. 0. 0. 0.]
+ [0. 0. 0. 1.]
+ [0. 0. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0. 1. 0.]
+ [1. 0. 0. 0. 0. 1.]
+ [1. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 1. 0.]
+ [1. 0. 1. 1. 0. 1.]
+ [0. 1. 0. 0. 1. 0.]]
+Result: Agreement
+
+Test 50.9:
+Graph 1 adjacency matrix:
+[[0. 0. 0.]
+ [0. 0. 1.]
+ [0. 1. 0.]]
+Graph 2 adjacency matrix:
+[[0. 1. 1. 0. 1. 0.]
+ [1. 0. 0. 0. 0. 1.]
+ [1. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 1. 0.]
+ [1. 0. 1. 1. 0. 1.]
+ [0. 1. 0. 0. 1. 0.]]
+Result: Agreement
