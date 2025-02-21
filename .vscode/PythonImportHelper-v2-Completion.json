@@ -18,10 +18,10 @@
     },
     {
         "label": "comparar_subgrafos",
-        "importPath": "aristas",
-        "description": "aristas",
+        "importPath": "edges",
+        "description": "edges",
         "isExtraImport": true,
-        "detail": "aristas",
+        "detail": "edges",
         "documentation": {}
     },
     {
@@ -35,46 +35,46 @@
     {
         "label": "comparar_subgrafos",
         "kind": 2,
-        "importPath": "src.aristas",
-        "description": "src.aristas",
+        "importPath": "src.edges",
+        "description": "src.edges",
         "peekOfCode": "def comparar_subgrafos(grafo1, grafo2):\n    \"\"\"\n    Compara subgrafos de dos grafos dados.\n    Args:\n        grafo1: Matriz de adyacencia del primer grafo.\n        grafo2: Matriz de adyacencia del segundo grafo.\n    \"\"\"\n    nodos_grafo1 = len(grafo1)\n    nodos_grafo2 = len(grafo2)\n    if nodos_grafo1 > nodos_grafo2:",
-        "detail": "src.aristas",
+        "detail": "src.edges",
         "documentation": {}
     },
     {
         "label": "encontrar_subgrafos",
         "kind": 2,
-        "importPath": "src.aristas",
-        "description": "src.aristas",
+        "importPath": "src.edges",
+        "description": "src.edges",
         "peekOfCode": "def encontrar_subgrafos(grafo_mayor, tamano_menor):\n    \"\"\"\n    Encuentra todos los subgrafos de un tamaño dado dentro de un grafo mayor.\n    Args:\n        grafo_mayor: Matriz de adyacencia del grafo mayor.\n        tamano_menor: El número de nodos que debe tener cada subgrafo.\n    Returns:\n        Una lista de matrices de adyacencia, donde cada matriz representa un subgrafo.\n    \"\"\"\n    import itertools",
-        "detail": "src.aristas",
+        "detail": "src.edges",
         "documentation": {}
     },
     {
         "label": "calcular_grado_nodo",
         "kind": 2,
-        "importPath": "src.aristas",
-        "description": "src.aristas",
+        "importPath": "src.edges",
+        "description": "src.edges",
         "peekOfCode": "def calcular_grado_nodo(grafo, nodo):\n    \"\"\"\n    Calcula el grado de un nodo en un grafo representado por una matriz de adyacencia.\n    Args:\n        grafo: Matriz de adyacencia del grafo.\n        nodo: El índice del nodo cuyo grado se va a calcular.\n    Returns:\n        El grado del nodo.\n    \"\"\"\n    grado = 0",
-        "detail": "src.aristas",
+        "detail": "src.edges",
         "documentation": {}
     },
     {
         "label": "obtener_aristas_ordenadas",
         "kind": 2,
-        "importPath": "src.aristas",
-        "description": "src.aristas",
+        "importPath": "src.edges",
+        "description": "src.edges",
         "peekOfCode": "def obtener_aristas_ordenadas(grafo):\n    \"\"\"\n    Obtiene una lista ordenada de aristas del grafo, donde cada arista se representa como una tupla (nodo_menor_grado, nodo_mayor_grado).\n    Args:\n        grafo: Matriz de adyacencia del grafo.\n    Returns:\n        Una lista de aristas ordenadas por el grado del nodo de menor grado.\n    \"\"\"\n    aristas = []\n    for i in range(len(grafo)):",
-        "detail": "src.aristas",
+        "detail": "src.edges",
         "documentation": {}
     },
     {
         "label": "comparar_aristas",
         "kind": 2,
-        "importPath": "src.aristas",
-        "description": "src.aristas",
+        "importPath": "src.edges",
+        "description": "src.edges",
         "peekOfCode": "def comparar_aristas(subgrafo, grafo_menor):\n    \"\"\"\n    Compara las aristas de un subgrafo con las aristas de un grafo menor,\n    verificando si las listas de grados de nodos correspondientes son iguales.\n    Args:\n        subgrafo: Matriz de adyacencia del subgrafo.\n        grafo_menor: Matriz de adyacencia del grafo menor.\n    \"\"\"\n    aristas_subgrafo = obtener_aristas_ordenadas(subgrafo)\n    aristas_grafo_menor = obtener_aristas_ordenadas(grafo_menor)",
-        "detail": "src.aristas",
+        "detail": "src.edges",
         "documentation": {}
     },
     {
